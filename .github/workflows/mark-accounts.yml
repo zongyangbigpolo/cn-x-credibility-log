@@ -1,0 +1,42 @@
+name: 标记已停用和改名的账号
+
+on:
+  schedule:
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: mark-accounts
+  cancel-in-progress: false
+
+jobs:
+  mark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 核对公开账号
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: node scripts/check-accounts.mjs --write > "$RUNNER_TEMP/mark.md"
+      - name: 打开拉取请求
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then
+            echo "没有新的停用或改名标记"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add accounts data/log.js 阅读.md
+          git commit -m "标记已停用和改名的账号"
+          git fetch origin account-status || true
+          git push --force-with-lease origin "HEAD:refs/heads/account-status"
+          gh pr create --base main --head account-status --title "标记已停用和改名的账号" --body-file "$RUNNER_TEMP/mark.md" || true

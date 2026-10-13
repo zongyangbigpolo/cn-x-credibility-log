@@ -1,0 +1,20 @@
+{
+  "id": "stable-id",
+  "handle": "recorded_handle",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": null,
+  "avatar_url": null,
+  "display_name": "",
+  "profile_url": "https://x.com/recorded_handle",
+  "status": "needs_review",
+  "availability": "unchecked",
+  "availability_note": "",
+  "availability_checked_at": null,
+  "availability_lock": false,
+  "overview": "用一段人话概括这个账号的不诚信行为。",
+  "updated": "2026-10-12",
+  "sources_are_public": true,
+  "editor_note": "",
+  "behaviors": ["data/behaviors/stable-id/behavior-id.json"]
+}

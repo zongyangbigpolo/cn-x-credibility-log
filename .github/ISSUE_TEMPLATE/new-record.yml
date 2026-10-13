@@ -1,0 +1,63 @@
+name: 提交一条公开记录
+description: 不会改代码也可以用这个表单。只填 X 上已经公开的内容。
+title: "记录: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        不要填写真实姓名、电话、住址、身份证、私人聊天记录。
+  - type: input
+    id: handle
+    attributes:
+      label: 公开账号名
+      description: X 上 @ 后面那一段。不要填真人姓名。如果改过名，两个名字都写上。
+      placeholder: example_handle
+    validations:
+      required: true
+  - type: input
+    id: profile
+    attributes:
+      label: 主页链接
+      placeholder: https://x.com/example_handle
+    validations:
+      required: true
+  - type: textarea
+    id: overview
+    attributes:
+      label: 账号总览
+      description: 用一段人话概括这个账号的不诚信行为。
+    validations:
+      required: true
+  - type: checkboxes
+    id: categories
+    attributes:
+      label: 不诚信行为类型
+      options:
+        - label: 虚假信息
+        - label: 前后矛盾
+        - label: 诈骗引流
+        - label: 身份造假
+        - label: 系统性抄袭
+        - label: 已证实的恶意造谣
+    validations:
+      required: true
+  - type: input
+    id: post
+    attributes:
+      label: 一条公开帖链接
+      placeholder: https://x.com/example_handle/status/123
+    validations:
+      required: true
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: 公开帖原话，以及它说明什么
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我确认没有填写真实姓名、电话、住址、身份证或私人聊天
+          required: true

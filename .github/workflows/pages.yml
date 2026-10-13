@@ -1,0 +1,38 @@
+name: 发布阅读页
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: 只发布阅读页
+        run: |
+          mkdir -p _site/css _site/js _site/data _site/assets/avatars
+          cp index.html .nojekyll _site/
+          cp css/style.css _site/css/
+          cp js/app.js _site/js/
+          cp data/log.js _site/data/
+          cp assets/avatars/* _site/assets/avatars/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

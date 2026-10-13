@@ -1,0 +1,12 @@
+{
+  "id": "plagiarism",
+  "account_id": "demo-gamma",
+  "categories": ["plagiarism"],
+  "title": "把别人的公开长文说成自己写的",
+  "summary": "原文早就公开，后来整段被说成原创。",
+  "verification": null,
+  "evidence": [
+    "evidence/demo-gamma/2026-05-12-original.json",
+    "evidence/demo-gamma/2026-07-01-copied.json"
+  ]
+}

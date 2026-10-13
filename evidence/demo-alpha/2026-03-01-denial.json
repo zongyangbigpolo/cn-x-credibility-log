@@ -1,0 +1,8 @@
+{
+  "id": "2026-03-01-denial",
+  "account_id": "demo-alpha",
+  "date": "2026-03-01",
+  "url": "https://example.invalid/demo-alpha/status/1",
+  "excerpt": "这里会摘公开原话。示范不摘 @LeePolo7 的帖。",
+  "why_it_matters": "这里会说明这条帖为什么被收进来。"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "behavior-id",
+  "account_id": "stable-id",
+  "categories": ["false_info"],
+  "title": "这项不诚信行为的短标题",
+  "summary": "用一两句人话说明这项行为。",
+  "verification": null,
+  "evidence": ["evidence/stable-id/2026-10-12-post.json"]
+}

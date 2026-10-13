@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>公开记录</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f1419'/%3E%3Cpath d='M8 12h16M8 17h16M8 22h10' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+  <a class="skip" href="#report">跳到账号内容</a>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <div>
+        <strong>公开记录</strong>
+        <em>只收公开帖</em>
+      </div>
+    </div>
+    <form id="search-form" class="search" role="search">
+      <label class="sr" for="q">搜索账号</label>
+      <input id="q" name="q" type="search" placeholder="搜索账号、曾用名或公开显示名" autocomplete="off" enterkeyhint="search">
+    </form>
+    <div class="tools">
+      <div class="seg" role="group" aria-label="字号">
+        <button type="button" data-size="md" aria-pressed="true">标准</button>
+        <button type="button" data-size="lg">大字</button>
+        <button type="button" data-size="xl">特大</button>
+      </div>
+      <button type="button" id="theme">深色</button>
+    </div>
+  </header>
+  <main class="shell">
+    <aside class="rail" aria-label="账号列表">
+      <p id="result-count" class="count" aria-live="polite"></p>
+      <p class="hint">曾用名也能搜到。GitHub 每周标出已停用和已改名。</p>
+      <div id="directory" class="directory"></div>
+    </aside>
+    <section id="report" class="report" aria-live="polite"></section>
+  </main>
+  <footer class="site-footer">
+    <ul>
+      <li>只记录 X 上的公开帖、公开声明、公开行为</li>
+      <li>不记录真实姓名、电话、住址、身份证、私人聊天</li>
+      <li>这不是法院判决，也不号召去骚扰任何人</li>
+    </ul>
+  </footer>
+  <noscript><p class="noscript">浏览器没有打开脚本。请改看仓库里的「阅读.md」。</p></noscript>
+  <script src="data/log.js?v=5"></script>
+  <script src="js/app.js?v=5"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "cn-x-credibility-log",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check && node scripts/check-accounts.mjs --self-test"
+  }
+}

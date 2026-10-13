@@ -1,0 +1,20 @@
+{
+  "id": "demo-alpha",
+  "handle": "LeePolo7",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": "1498142087224922115",
+  "avatar_url": "assets/avatars/lee-polo7.jpg",
+  "display_name": "Polo",
+  "profile_url": "https://x.com/LeePolo7",
+  "status": "example",
+  "availability": "example",
+  "availability_note": "应本人要求，用这个公开账号做版式示范，不参与定期核对，也不是不诚信记录。",
+  "availability_checked_at": null,
+  "availability_lock": true,
+  "overview": "版式示范。这里用 @LeePolo7 的公开头像和账号名，展示搜到账号后会看到的总览。下面的行为是占位，不是对这个账号的记录。",
+  "updated": "2026-10-12",
+  "sources_are_public": true,
+  "editor_note": "应本人要求做版式示范。占位文字不是原帖，也不是指控。",
+  "behaviors": ["data/behaviors/demo-alpha/contradiction.json"]
+}

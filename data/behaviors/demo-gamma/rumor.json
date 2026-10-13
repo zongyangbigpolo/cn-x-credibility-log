@@ -1,0 +1,12 @@
+{
+  "id": "rumor",
+  "account_id": "demo-gamma",
+  "categories": ["verified_rumor"],
+  "title": "公开造谣，随后被公开材料否定",
+  "summary": "公开声称某人已经跑路。这是虚构示例，真实记录必须换上真的公开链接。",
+  "verification": {
+    "url": "https://example.invalid/demo-source/status/9",
+    "note": "虚构的公开澄清帖，写明这个说法不成立。真实记录里这里必须换成真的公开链接。"
+  },
+  "evidence": ["evidence/demo-gamma/2026-07-21-rumor.json"]
+}

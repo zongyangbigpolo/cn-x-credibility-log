@@ -1,0 +1,23 @@
+{
+  "id": "demo-beta",
+  "handle": "demo_beta",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": null,
+  "avatar_url": "assets/avatars/demo-beta.svg",
+  "display_name": "示例账号乙",
+  "profile_url": "https://example.invalid/demo_beta",
+  "status": "example",
+  "availability": "deactivated",
+  "availability_note": "虚构示例：用来展示「已停用」标记，不是真实核对结果。",
+  "availability_checked_at": null,
+  "availability_lock": true,
+  "overview": "虚构示例。这个账号公开冒充机构员工，并用公开帖把人往定金上引。",
+  "updated": "2026-09-02",
+  "sources_are_public": true,
+  "editor_note": "这是虚构示例，用来展示版式，不是真实账号。",
+  "behaviors": [
+    "data/behaviors/demo-beta/identity.json",
+    "data/behaviors/demo-beta/scam.json"
+  ]
+}
