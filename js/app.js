@@ -178,6 +178,11 @@
       facts,
     );
     if (account.availability_note) children.push(el("p", { class: "muted" }, [account.availability_note]));
+    children.push(el("p", { class: "muted" }, [
+      account.x_user_id
+        ? "追踪方式：按平台用户编号唯一追踪。改名或停用仍是这一条。只有另外开一个新号，才不会自动并进来。"
+        : "还没有记下平台用户编号。改名后可能对不上，除非以后补上编号。",
+    ]));
     const list = el("ol", {}, account.behaviors.map((behavior) => el("li", {}, [
       el("a", { href: `#${account.id}-${behavior.id}` }, [behavior.title]),
     ])));

@@ -219,6 +219,47 @@ window.CREDIBILITY_LOG = {
           ]
         }
       ]
+    },
+    {
+      "id": "owyyzq",
+      "handle": "owyyzq",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "2108479218577522688",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2108489433423257600/WAe-YwQv_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/owyyzq",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-10-13 公开主页还能打开。",
+      "availability_checked_at": "2026-10-13",
+      "availability_lock": false,
+      "overview": "提交人确认的套路是收门槛费骗人。公开简介只有「🚪30」，现有公开帖没有写出收费金额或付款要求，所以先标待核对。这不是法院判决。",
+      "updated": "2026-10-13",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入，避免收进可能的真人姓名。头像用的是公开头像地址。",
+      "behaviors": [
+        {
+          "id": "entry-fee",
+          "account_id": "owyyzq",
+          "categories": [
+            "scam_funnel"
+          ],
+          "title": "用门槛费把人往私下交易上引",
+          "summary": "提交人确认这个账号收门槛费骗人。公开简介没有把收费写完整，公开帖也没有写出付款要求。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-13-profile",
+              "account_id": "owyyzq",
+              "date": "2026-10-13",
+              "url": "https://x.com/owyyzq",
+              "excerpt": "公开简介：🚪30",
+              "why_it_matters": "这是公开主页上的简介，不是一张写出门槛费的帖。提交人说明这是门槛费。现有公开帖没有写出收费或付款要求。"
+            }
+          ]
+        }
+      ]
     }
   ]
 };

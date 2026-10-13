@@ -220,8 +220,9 @@ function loadAccounts() {
         if (item.account_id !== account.id) fail(evidencePath, "account_id 必须指回账号");
         if (evidencePath !== `evidence/${account.id}/${item.id}.json`) fail(evidencePath, "文件名必须等于证据 id");
         if (!DATE.test(item.date || "")) fail(evidencePath, "date 要用 YYYY-MM-DD");
-        if (!example && account.availability === "deactivated" && X_PROFILE.test(item.url || "") && item.url.toLowerCase().includes(`/${String(account.handle).toLowerCase()}`)) {
-          // 停用后原帖打不开时，允许用这个账号自己的主页作为仍能打开的公开页面。
+        const ownProfile = !example && X_PROFILE.test(item.url || "") && item.url.toLowerCase().includes(`/${String(account.handle).toLowerCase()}`);
+        if (ownProfile) {
+          // 主页本身是公开来源，或停用后原帖打不开时，允许用这个账号自己的主页。
         } else {
           assertUrl(evidencePath, "url", item.url, example, "status");
         }
@@ -288,6 +289,8 @@ function renderReading(data) {
     "搜到一个账号后，先看账号总览，再看它的全部不诚信行为。每项行为下面是公开帖证据。",
     "",
     "不收录真实姓名、电话、住址、身份证、私人聊天。标成「示例」的不是真实账号。已整理不等于法院判决。",
+    "",
+    "每个账号按平台用户编号唯一追踪。改名、停用都还是这一条。只有另外开一个新号，才不会自动并进来。",
     "",
     "GitHub 会定期核对正式账号，并标出已停用和已改名。曾用名仍可搜索。示例不参与核对。",
     "",

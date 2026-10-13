@@ -1,0 +1,11 @@
+{
+  "id": "entry-fee",
+  "account_id": "owyyzq",
+  "categories": ["scam_funnel"],
+  "title": "用门槛费把人往私下交易上引",
+  "summary": "提交人确认这个账号收门槛费骗人。公开简介没有把收费写完整，公开帖也没有写出付款要求。",
+  "verification": null,
+  "evidence": [
+    "evidence/owyyzq/2026-10-13-profile.json"
+  ]
+}
