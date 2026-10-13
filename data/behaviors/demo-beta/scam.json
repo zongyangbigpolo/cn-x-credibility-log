@@ -1,9 +1,0 @@
-{
-  "id": "scam",
-  "account_id": "demo-beta",
-  "categories": ["scam_funnel"],
-  "title": "用公开帖催人交定金",
-  "summary": "公开帖把人往“内部名额”和定金上引。",
-  "verification": null,
-  "evidence": ["evidence/demo-beta/2026-08-20-deposit.json"]
-}

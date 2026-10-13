@@ -1,0 +1,23 @@
+{
+  "id": "kevin-he",
+  "handle": "KevinHe79196868",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": "1324747047564681217",
+  "avatar_url": "https://pbs.twimg.com/profile_images/2096611771180351488/7vT2uMp3_200x200.jpg",
+  "display_name": "暴躁小薯条",
+  "profile_url": "https://x.com/KevinHe79196868",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-10-13 公开主页还能打开。",
+  "availability_checked_at": "2026-10-13",
+  "availability_lock": false,
+  "overview": "提交时说明的套路是：先以约炮为由接触，再诱导对方下载带病毒的软件，或让对方代付酒店。目前能对上的公开帖是在找人、把回复引到私信，并反复提到酒店代付。这些帖没有写出软件下载地址，也没有直接写「请帮我付酒店」，所以先标待核对。这不是法院判决。",
+  "updated": "2026-10-13",
+  "sources_are_public": true,
+  "editor_note": "显示名用的是公开昵称，不是真实姓名。带毒软件这一点还没有公开帖可以对上，不能写成已经证实。",
+  "behaviors": [
+    "data/behaviors/kevin-he/solicit-dm.json",
+    "data/behaviors/kevin-he/hotel-pretext.json"
+  ]
+}

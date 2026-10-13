@@ -1,0 +1,12 @@
+{
+  "id": "hotel-pretext",
+  "account_id": "kevin-he",
+  "categories": ["scam_funnel"],
+  "title": "公开把找人和酒店代付绑在一起",
+  "summary": "公开找人时反复提到酒店代付。帖子是在说别人被骗，没有直接写出「请你帮我付酒店」，所以这一点还要再对。",
+  "verification": null,
+  "evidence": [
+    "evidence/kevin-he/2026-10-11-hotel-payment.json",
+    "evidence/kevin-he/2026-10-12-hotel-payment.json"
+  ]
+}

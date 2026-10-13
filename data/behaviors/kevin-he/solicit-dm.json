@@ -1,0 +1,13 @@
+{
+  "id": "solicit-dm",
+  "account_id": "kevin-he",
+  "categories": ["scam_funnel"],
+  "title": "公开找人，并把回复引到私信",
+  "summary": "公开说要找人见面或找长期，并让对方重新发私信。还写了不会随便加联系方式。",
+  "verification": null,
+  "evidence": [
+    "evidence/kevin-he/2026-09-19-looking.json",
+    "evidence/kevin-he/2026-10-11-reply-dms.json",
+    "evidence/kevin-he/2026-10-12-no-casual-contact.json"
+  ]
+}

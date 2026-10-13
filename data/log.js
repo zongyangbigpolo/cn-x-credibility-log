@@ -89,185 +89,85 @@ window.CREDIBILITY_LOG = {
   ],
   "accounts": [
     {
-      "id": "demo-beta",
-      "handle": "demo_beta",
+      "id": "kevin-he",
+      "handle": "KevinHe79196868",
       "former_handles": [],
       "current_handle": null,
-      "x_user_id": null,
-      "avatar_url": "assets/avatars/demo-beta.svg",
-      "display_name": "示例账号乙",
-      "profile_url": "https://example.invalid/demo_beta",
-      "status": "example",
-      "availability": "deactivated",
-      "availability_note": "虚构示例：用来展示「已停用」标记，不是真实核对结果。",
-      "availability_checked_at": null,
-      "availability_lock": true,
-      "overview": "虚构示例。这个账号公开冒充机构员工，并用公开帖把人往定金上引。",
-      "updated": "2026-09-02",
+      "x_user_id": "1324747047564681217",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2096611771180351488/7vT2uMp3_200x200.jpg",
+      "display_name": "暴躁小薯条",
+      "profile_url": "https://x.com/KevinHe79196868",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-10-13 公开主页还能打开。",
+      "availability_checked_at": "2026-10-13",
+      "availability_lock": false,
+      "overview": "提交时说明的套路是：先以约炮为由接触，再诱导对方下载带病毒的软件，或让对方代付酒店。目前能对上的公开帖是在找人、把回复引到私信，并反复提到酒店代付。这些帖没有写出软件下载地址，也没有直接写「请帮我付酒店」，所以先标待核对。这不是法院判决。",
+      "updated": "2026-10-13",
       "sources_are_public": true,
-      "editor_note": "这是虚构示例，用来展示版式，不是真实账号。",
+      "editor_note": "显示名用的是公开昵称，不是真实姓名。带毒软件这一点还没有公开帖可以对上，不能写成已经证实。",
       "behaviors": [
         {
-          "id": "identity",
-          "account_id": "demo-beta",
-          "categories": [
-            "identity_fraud"
-          ],
-          "title": "公开冒充机构员工",
-          "summary": "公开帖自称某机构在职员工，但没有公开材料对得上。",
-          "verification": null,
-          "evidence": [
-            {
-              "id": "2026-08-01-claimed-staff",
-              "account_id": "demo-beta",
-              "date": "2026-08-01",
-              "url": "https://example.invalid/demo-beta/status/1",
-              "excerpt": "「我是某机构在职员工，私信我领内部名额。」",
-              "why_it_matters": "公开身份说法出现在这条公开帖里。"
-            }
-          ]
-        },
-        {
-          "id": "scam",
-          "account_id": "demo-beta",
+          "id": "solicit-dm",
+          "account_id": "kevin-he",
           "categories": [
             "scam_funnel"
           ],
-          "title": "用公开帖催人交定金",
-          "summary": "公开帖把人往“内部名额”和定金上引。",
+          "title": "公开找人，并把回复引到私信",
+          "summary": "公开说要找人见面或找长期，并让对方重新发私信。还写了不会随便加联系方式。",
           "verification": null,
           "evidence": [
             {
-              "id": "2026-08-20-deposit",
-              "account_id": "demo-beta",
-              "date": "2026-08-20",
-              "url": "https://example.invalid/demo-beta/status/2",
-              "excerpt": "「名额今天截止，先转定金。」",
-              "why_it_matters": "公开帖继续催人去私下交易。"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "demo-gamma",
-      "handle": "demo_gamma",
-      "former_handles": [
-        "demo_gamma"
-      ],
-      "current_handle": "demo_gamma_new",
-      "x_user_id": null,
-      "avatar_url": "assets/avatars/demo-gamma.svg",
-      "display_name": "示例账号丙",
-      "profile_url": "https://example.invalid/demo_gamma_new",
-      "status": "example",
-      "availability": "renamed",
-      "availability_note": "虚构示例：用来展示「已改名」标记，不是真实核对结果。",
-      "availability_checked_at": null,
-      "availability_lock": true,
-      "overview": "虚构示例。这个账号把别人的公开长文说成自己写的，并发过一条后来被公开材料否定的谣言。",
-      "updated": "2026-07-30",
-      "sources_are_public": true,
-      "editor_note": "这是虚构示例，用来展示版式，不是真实账号。",
-      "behaviors": [
-        {
-          "id": "plagiarism",
-          "account_id": "demo-gamma",
-          "categories": [
-            "plagiarism"
-          ],
-          "title": "把别人的公开长文说成自己写的",
-          "summary": "原文早就公开，后来整段被说成原创。",
-          "verification": null,
-          "evidence": [
-            {
-              "id": "2026-05-12-original",
-              "account_id": "demo-gamma",
-              "date": "2026-05-12",
-              "url": "https://example.invalid/demo-other/status/3",
-              "excerpt": "别人早已公开的长文原段。",
-              "why_it_matters": "用来对照，说明原文早就在。"
+              "id": "2026-09-19-looking",
+              "account_id": "kevin-he",
+              "date": "2026-09-19",
+              "url": "https://x.com/KevinHe79196868/status/2101271063040840142",
+              "excerpt": "要不然到时候找国庆节去玩的人或者长期的就找不到啦",
+              "why_it_matters": "公开在找短期见面或长期联系的人。"
             },
             {
-              "id": "2026-07-01-copied",
-              "account_id": "demo-gamma",
-              "date": "2026-07-01",
-              "url": "https://example.invalid/demo-gamma/status/4",
-              "excerpt": "「下面是我自己写的。」后面是同一段文字。",
-              "why_it_matters": "公开宣称是原创，但和上面的公开长文相同。"
+              "id": "2026-10-11-reply-dms",
+              "account_id": "kevin-he",
+              "date": "2026-10-11",
+              "url": "https://x.com/KevinHe79196868/status/2109222266932515037",
+              "excerpt": "现在开始回复私信。如果想优先被回复可以重新在给我发一下。",
+              "why_it_matters": "把想联系的人引到私信。"
+            },
+            {
+              "id": "2026-10-12-no-casual-contact",
+              "account_id": "kevin-he",
+              "date": "2026-10-12",
+              "url": "https://x.com/KevinHe79196868/status/2109561613250703435",
+              "excerpt": "可以重新给我发一下。那种口嗨的就不要给我发消息了。我不会随便加人。",
+              "why_it_matters": "继续把联系引回私信，并表示不会随便加别的联系方式。原帖用了联系方式的缩写，这里不照抄。"
             }
           ]
         },
         {
-          "id": "rumor",
-          "account_id": "demo-gamma",
+          "id": "hotel-pretext",
+          "account_id": "kevin-he",
           "categories": [
-            "verified_rumor"
+            "scam_funnel"
           ],
-          "title": "公开造谣，随后被公开材料否定",
-          "summary": "公开声称某人已经跑路。这是虚构示例，真实记录必须换上真的公开链接。",
-          "verification": {
-            "url": "https://example.invalid/demo-source/status/9",
-            "note": "虚构的公开澄清帖，写明这个说法不成立。真实记录里这里必须换成真的公开链接。"
-          },
-          "evidence": [
-            {
-              "id": "2026-07-21-rumor",
-              "account_id": "demo-gamma",
-              "date": "2026-07-21",
-              "url": "https://example.invalid/demo-gamma/status/5",
-              "excerpt": "「某人已经跑路。」",
-              "why_it_matters": "这是被稍后公开材料否定的说法。真实记录不能只靠转述。"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "demo-alpha",
-      "handle": "LeePolo7",
-      "former_handles": [],
-      "current_handle": null,
-      "x_user_id": "1498142087224922115",
-      "avatar_url": "assets/avatars/lee-polo7.jpg",
-      "display_name": "Polo",
-      "profile_url": "https://x.com/LeePolo7",
-      "status": "example",
-      "availability": "example",
-      "availability_note": "应本人要求，用这个公开账号做版式示范，不参与定期核对，也不是不诚信记录。",
-      "availability_checked_at": null,
-      "availability_lock": true,
-      "overview": "版式示范。这里用 @LeePolo7 的公开头像和账号名，展示搜到账号后会看到的总览。下面的行为是占位，不是对这个账号的记录。",
-      "updated": "2026-10-12",
-      "sources_are_public": true,
-      "editor_note": "应本人要求做版式示范。占位文字不是原帖，也不是指控。",
-      "behaviors": [
-        {
-          "id": "contradiction",
-          "account_id": "demo-alpha",
-          "categories": [
-            "false_info",
-            "contradiction"
-          ],
-          "title": "版式：一项不诚信行为会显示在这里",
-          "summary": "正式记录才会写具体行为。这里只占位置。",
+          "title": "公开把找人和酒店代付绑在一起",
+          "summary": "公开找人时反复提到酒店代付。帖子是在说别人被骗，没有直接写出「请你帮我付酒店」，所以这一点还要再对。",
           "verification": null,
           "evidence": [
             {
-              "id": "2026-03-01-denial",
-              "account_id": "demo-alpha",
-              "date": "2026-03-01",
-              "url": "https://example.invalid/demo-alpha/status/1",
-              "excerpt": "这里会摘公开原话。示范不摘 @LeePolo7 的帖。",
-              "why_it_matters": "这里会说明这条帖为什么被收进来。"
+              "id": "2026-10-11-hotel-payment",
+              "account_id": "kevin-he",
+              "date": "2026-10-11",
+              "url": "https://x.com/KevinHe79196868/status/2109309175142748254",
+              "excerpt": "这个上面还有真男么，都去哪里。是不是都被骗光了，不敢找了。都是被酒店代付骗的吗还是别的。",
+              "why_it_matters": "公开找人，同时把酒店代付说成别人被骗的原因。这句话还不能直接证明这个账号在让人代付。"
             },
             {
-              "id": "2026-06-18-admission",
-              "account_id": "demo-alpha",
-              "date": "2026-06-18",
-              "url": "https://example.invalid/demo-alpha/status/2",
-              "excerpt": "第二条证据也显示在时间线里。这句同样是占位。",
-              "why_it_matters": "正式记录才会对照前后说法。"
+              "id": "2026-10-12-hotel-payment",
+              "account_id": "kevin-he",
+              "date": "2026-10-12",
+              "url": "https://x.com/KevinHe79196868/status/2109691179000611028",
+              "excerpt": "你们这种的活该被酒店代付被骗。很多真心的都被骗了，你们都是怎么被骗的。",
+              "why_it_matters": "再次把酒店代付和找人放在一起。原帖还有不适内容，这里只摘和代付有关的句子。"
             }
           ]
         }

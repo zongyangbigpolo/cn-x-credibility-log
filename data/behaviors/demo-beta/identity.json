@@ -1,9 +1,0 @@
-{
-  "id": "identity",
-  "account_id": "demo-beta",
-  "categories": ["identity_fraud"],
-  "title": "公开冒充机构员工",
-  "summary": "公开帖自称某机构在职员工，但没有公开材料对得上。",
-  "verification": null,
-  "evidence": ["evidence/demo-beta/2026-08-01-claimed-staff.json"]
-}
