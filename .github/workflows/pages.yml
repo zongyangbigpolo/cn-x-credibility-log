@@ -32,7 +32,9 @@ jobs:
           cp css/style.css _site/css/
           cp js/app.js _site/js/
           cp data/log.js _site/data/
-          cp assets/avatars/* _site/assets/avatars/
+          if compgen -G "assets/avatars/*" > /dev/null; then
+            cp assets/avatars/* _site/assets/avatars/
+          fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
