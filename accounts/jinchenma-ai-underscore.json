@@ -1,0 +1,22 @@
+{
+  "id": "jinchenma-ai-underscore",
+  "handle": "jinchenma_ai_",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": "946356139691712512",
+  "avatar_url": null,
+  "display_name": "",
+  "profile_url": "https://x.com/jinchenma_ai_",
+  "status": "needs_review",
+  "availability": "deactivated",
+  "availability_note": "平台显示这个账号已停用。按账号名查到的平台编号是 946356139691712512。",
+  "availability_checked_at": "2026-10-13",
+  "availability_lock": false,
+  "overview": "提交人确认的套路是冒充大 V，做 Web3 诈骗引流。这个账号名比还在更新的 @jinchenma_ai 多一个结尾下划线，平台编号也不同，不要看成同一个人。2026-10-13 公开接口显示已停用，原来的帖已经打不开，所以先标待核对。这不是法院判决。",
+  "updated": "2026-10-13",
+  "sources_are_public": true,
+  "editor_note": "不要和 @jinchenma_ai 搞混。那个账号还在更新，平台编号是 796179107172257792。这里只记录多一个下划线、已经停用的号。",
+  "behaviors": [
+    "data/behaviors/jinchenma-ai-underscore/web3-impersonation.json"
+  ]
+}

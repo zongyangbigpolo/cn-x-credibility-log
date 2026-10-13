@@ -18,6 +18,11 @@ window.CREDIBILITY_LOG = {
       "plain": "公开帖把人往可疑的赚钱、投资或私下交易上引。"
     },
     {
+      "id": "web3_scam",
+      "label": "Web3诈骗引流",
+      "plain": "把人往虚拟币、钱包或链上项目的可疑交易上引。"
+    },
+    {
       "id": "identity_fraud",
       "label": "身份造假",
       "plain": "公开身份和公开材料对不上，例如冒充机构、职业或经历。"
@@ -88,6 +93,48 @@ window.CREDIBILITY_LOG = {
     }
   ],
   "accounts": [
+    {
+      "id": "jinchenma-ai-underscore",
+      "handle": "jinchenma_ai_",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "946356139691712512",
+      "avatar_url": null,
+      "display_name": "",
+      "profile_url": "https://x.com/jinchenma_ai_",
+      "status": "needs_review",
+      "availability": "deactivated",
+      "availability_note": "平台显示这个账号已停用。按账号名查到的平台编号是 946356139691712512。",
+      "availability_checked_at": "2026-10-13",
+      "availability_lock": false,
+      "overview": "提交人确认的套路是冒充大 V，做 Web3 诈骗引流。这个账号名比还在更新的 @jinchenma_ai 多一个结尾下划线，平台编号也不同，不要看成同一个人。2026-10-13 公开接口显示已停用，原来的帖已经打不开，所以先标待核对。这不是法院判决。",
+      "updated": "2026-10-13",
+      "sources_are_public": true,
+      "editor_note": "不要和 @jinchenma_ai 搞混。那个账号还在更新，平台编号是 796179107172257792。这里只记录多一个下划线、已经停用的号。",
+      "behaviors": [
+        {
+          "id": "web3-impersonation",
+          "account_id": "jinchenma-ai-underscore",
+          "categories": [
+            "identity_fraud",
+            "web3_scam"
+          ],
+          "title": "冒充大 V 做 Web3 诈骗引流",
+          "summary": "提交人确认这个近似账号冒充大 V，把人往 Web3 诈骗上引。账号已停用，公开帖打不开，暂时摘不到原话。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-13-suspended",
+              "account_id": "jinchenma-ai-underscore",
+              "date": "2026-10-13",
+              "url": "https://x.com/jinchenma_ai_",
+              "excerpt": "平台显示这个账号已停用。",
+              "why_it_matters": "这是还能打开的公开主页，不是诈骗原帖。原帖已经打不开。账号名只比 @jinchenma_ai 多一个下划线，不要看错人。"
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "kevin-he",
       "handle": "KevinHe79196868",

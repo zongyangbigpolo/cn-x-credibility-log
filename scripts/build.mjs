@@ -28,7 +28,7 @@ const FORBIDDEN_KEYS = new Set([
 ]);
 const PHONE = /(?<!\d)1[3-9]\d{9}(?!\d)/;
 const EMAIL = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i;
-const ID_CARD = /(?<!\d)\d{17}[\dXx](?!\d)/;
+const ID_CARD = /(?<!\d)\d{6}(?:19|20)\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\d|3[01])\d{3}[\dXx](?!\d)/;
 const DATE = /^\d{4}-\d{2}-\d{2}$/;
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const HANDLE = /^[A-Za-z0-9_]{1,15}$/;
@@ -220,7 +220,11 @@ function loadAccounts() {
         if (item.account_id !== account.id) fail(evidencePath, "account_id 必须指回账号");
         if (evidencePath !== `evidence/${account.id}/${item.id}.json`) fail(evidencePath, "文件名必须等于证据 id");
         if (!DATE.test(item.date || "")) fail(evidencePath, "date 要用 YYYY-MM-DD");
-        assertUrl(evidencePath, "url", item.url, example, "status");
+        if (!example && account.availability === "deactivated" && X_PROFILE.test(item.url || "") && item.url.toLowerCase().includes(`/${String(account.handle).toLowerCase()}`)) {
+          // 停用后原帖打不开时，允许用这个账号自己的主页作为仍能打开的公开页面。
+        } else {
+          assertUrl(evidencePath, "url", item.url, example, "status");
+        }
         if ((item.excerpt || "").trim().length < 2) fail(evidencePath, "excerpt 要摘公开原话");
         if ((item.why_it_matters || "").trim().length < 2) fail(evidencePath, "why_it_matters 要用白话说明");
         evidence.push(item);

@@ -98,7 +98,7 @@ export function decide(account, byId, byHandle) {
     return apply({
       availability: "deactivated",
       current_handle: account.current_handle ?? null,
-      x_user_id: account.x_user_id ?? null,
+      x_user_id: byHandle.id || account.x_user_id || null,
       availability_note: "平台显示这个账号已停用。",
     });
   }
@@ -159,6 +159,8 @@ function runSelfTest() {
   const noId = { ...base, x_user_id: null, availability: "unchecked" };
   const missing = decide(noId, null, { kind: "not_found" });
   assertEqual(missing.availability, "missing", "handle missing is not yet a rename");
+  const suspendedId = decide(noId, null, { kind: "suspended", id: "946" });
+  assertEqual(suspendedId.x_user_id, "946", "suspended handle lookup keeps user id");
 
   const locked = decide({ ...base, availability_lock: true }, { kind: "suspended" }, null);
   assertEqual(locked.changed, false, "lock");
@@ -200,7 +202,9 @@ function normalizeLookup(payload, status) {
   const reason = [payload.reason, payload.message, payload.detail, ...errors.flatMap((item) => [item.title, item.detail])]
     .filter(Boolean)
     .join(" ");
-  if (payload.reason === "suspended" || /suspend/i.test(reason)) return { kind: "suspended" };
+  if (payload.reason === "suspended" || /suspend/i.test(reason)) {
+    return { kind: "suspended", id: payload.id ? String(payload.id) : null };
+  }
   const user = payload.user || payload.data;
   const screen = user?.screen_name || user?.username;
   const id = user?.id;

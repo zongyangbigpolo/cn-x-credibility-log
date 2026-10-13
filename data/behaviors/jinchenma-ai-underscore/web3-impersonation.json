@@ -1,0 +1,11 @@
+{
+  "id": "web3-impersonation",
+  "account_id": "jinchenma-ai-underscore",
+  "categories": ["identity_fraud", "web3_scam"],
+  "title": "冒充大 V 做 Web3 诈骗引流",
+  "summary": "提交人确认这个近似账号冒充大 V，把人往 Web3 诈骗上引。账号已停用，公开帖打不开，暂时摘不到原话。",
+  "verification": null,
+  "evidence": [
+    "evidence/jinchenma-ai-underscore/2026-10-13-suspended.json"
+  ]
+}

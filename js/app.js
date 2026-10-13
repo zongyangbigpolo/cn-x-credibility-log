@@ -196,7 +196,7 @@
         el("p", {}, [item.excerpt]),
         el("p", { class: "muted" }, [item.why_it_matters]),
       ];
-      if (link) body.push(el("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, ["打开原帖"]));
+      if (link) body.push(el("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, [link.includes("/status/") ? "打开原帖" : "打开主页"]));
       else body.push(el("p", { class: "muted" }, ["示例没有真实链接"]));
       return el("li", {}, body);
     }));
