@@ -56,9 +56,6 @@ html[data-theme="dark"] {
   }
 }
 
-html[data-size="lg"] { --size: 17px; }
-html[data-size="xl"] { --size: 19px; }
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -157,21 +154,14 @@ a { color: var(--blue); }
   pointer-events: none;
 }
 .tools { display: flex; gap: 8px; align-items: center; }
-.seg, #theme {
+#theme {
   border: 1px solid var(--line-strong);
   background: var(--panel);
   border-radius: 999px;
-}
-.seg { display: flex; overflow: hidden; }
-.seg button, #theme {
-  border: 0;
-  background: transparent;
   color: var(--muted);
   padding: 6px 10px;
   cursor: pointer;
 }
-.seg button[aria-pressed="true"] { background: var(--ink); color: var(--panel); }
-#theme { border: 1px solid var(--line-strong); }
 
 .shell {
   display: grid;

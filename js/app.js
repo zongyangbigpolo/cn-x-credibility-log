@@ -74,7 +74,7 @@
   }
 
   function namesOf(account) {
-    return [account.handle, account.current_handle, ...(account.former_handles || []), account.display_name]
+    return [account.handle, account.current_handle, ...(account.former_handles || []), account.display_name, account.x_user_id]
       .filter(Boolean);
   }
 
@@ -151,6 +151,7 @@
     });
     if (former.length) addFact("其他曾用名", former.map((handle) => `@${handle}`).join("、"));
     const postCount = account.behaviors.reduce((sum, behavior) => sum + behavior.evidence.length, 0);
+    if (account.x_user_id) addFact("平台编号", String(account.x_user_id));
     if (account.availability_checked_at) addFact("最近标记", formatDate(account.availability_checked_at));
 
     const children = [
@@ -245,17 +246,6 @@
   if (savedTheme === "dark" || savedTheme === "light") applyTheme(savedTheme);
   else if (matchMedia("(prefers-color-scheme: dark)").matches) applyTheme("dark");
 
-  document.querySelectorAll(".seg button").forEach((button) => {
-    button.addEventListener("click", () => {
-      document.documentElement.dataset.size = button.dataset.size;
-      document.querySelectorAll(".seg button").forEach((item) => {
-        item.setAttribute("aria-pressed", item === button ? "true" : "false");
-      });
-      localStorage.setItem("cnxlog-font", button.dataset.size);
-    });
-  });
-  const savedSize = localStorage.getItem("cnxlog-font");
-  if (savedSize) document.querySelector(`.seg button[data-size="${savedSize}"]`)?.click();
   if (!byId[selected]) {
     const photo = (account) => /\.(jpe?g|png)$/.test(account.avatar_url || "") || String(account.avatar_url || "").includes("pbs.twimg.com");
     selected = log.accounts.find((account) => account.status !== "example")?.id
