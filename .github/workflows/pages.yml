@@ -23,6 +23,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: 只发布阅读页
         run: |
           mkdir -p _site/css _site/js _site/data _site/assets/avatars
