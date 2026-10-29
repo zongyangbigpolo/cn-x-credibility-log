@@ -1,0 +1,22 @@
+{
+  "id": "shenshou888",
+  "handle": "shenshou888",
+  "x_user_id": "1535987541232750592",
+  "avatar_url": "https://pbs.twimg.com/profile_images/2102133002734366720/n3Jt0V86_200x200.jpg",
+  "profile_url": "https://x.com/shenshou888",
+  "overview": "提交人说明这个账号用虚假抽奖骗点赞和转发。2026-10-28 的公开帖写发 10 台 iPhone Duo，参与要关注、一键三连并评论，又写有缘人送给作者。帖子没有证明奖品发了或没发，所以先标待核对。这不是法院判决。",
+  "former_handles": [],
+  "current_handle": null,
+  "display_name": "",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-10-29 公开主页还能打开。没有登录，首页往后的帖和搜索结果看不到。",
+  "availability_checked_at": "2026-10-29",
+  "availability_lock": false,
+  "updated": "2026-10-29",
+  "sources_are_public": true,
+  "editor_note": "公开显示名没有写入。头像用的是公开头像地址。没有登录，只能核对公开主页上直接看得到的帖。",
+  "behaviors": [
+    "data/behaviors/shenshou888/fake-giveaway.json"
+  ]
+}

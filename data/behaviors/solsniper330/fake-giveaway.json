@@ -1,0 +1,13 @@
+{
+  "id": "fake-giveaway",
+  "categories": [
+    "false_info"
+  ],
+  "title": "用抽手机换点赞和评论",
+  "summary": "公开帖宣布抽 12 台 iPhone Duo，要求点赞并评论已关注，同时写抽粉丝送给作者。",
+  "account_id": "solsniper330",
+  "verification": null,
+  "evidence": [
+    "evidence/solsniper330/2026-10-26-iphone-giveaway.json"
+  ]
+}

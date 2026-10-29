@@ -1,0 +1,14 @@
+{
+  "id": "referral-bounty",
+  "categories": [
+    "web3_scam",
+    "scam_funnel"
+  ],
+  "title": "用关注和币安注册换承诺的 USDT",
+  "summary": "置顶公开帖要求关注并用推荐链接注册币安，KYC 后私信，承诺每人 20USDT，还提到股票信息。",
+  "account_id": "zhuanbidao",
+  "verification": null,
+  "evidence": [
+    "evidence/zhuanbidao/2026-10-24-binance-bounty.json"
+  ]
+}

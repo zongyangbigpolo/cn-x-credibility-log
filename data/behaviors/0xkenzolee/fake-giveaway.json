@@ -1,0 +1,14 @@
+{
+  "id": "fake-giveaway",
+  "categories": [
+    "false_info"
+  ],
+  "title": "用抽手机和奖金换互动",
+  "summary": "公开帖用 iPhone 抽奖换点赞、转发、关注和评论，另一条承诺从评论区抽一名关注者给 2500 美元。",
+  "account_id": "0xkenzolee",
+  "verification": null,
+  "evidence": [
+    "evidence/0xkenzolee/2026-10-28-cash-draw.json",
+    "evidence/0xkenzolee/2026-10-28-iphone-giveaway.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fake-giveaway",
+  "categories": [
+    "false_info"
+  ],
+  "title": "用抽手机换关注和一键三连",
+  "summary": "公开帖宣布抽 3 台 xiaomi Duo，要求关注、一键三连和评论，并让 Grok 抽奖。",
+  "account_id": "starcoreron",
+  "verification": null,
+  "evidence": [
+    "evidence/starcoreron/2026-10-27-phone-giveaway.json"
+  ]
+}

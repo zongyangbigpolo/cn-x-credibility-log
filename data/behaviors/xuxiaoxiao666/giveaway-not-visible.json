@@ -1,0 +1,13 @@
+{
+  "id": "giveaway-not-visible",
+  "categories": [
+    "false_info"
+  ],
+  "title": "提交称有虚假抽奖，首页还没对上帖",
+  "summary": "提交人把这个账号列入虚假抽奖骗互动。公开主页首页当时没有看到对应帖。",
+  "account_id": "xuxiaoxiao666",
+  "verification": null,
+  "evidence": [
+    "evidence/xuxiaoxiao666/2026-10-29-homepage.json"
+  ]
+}

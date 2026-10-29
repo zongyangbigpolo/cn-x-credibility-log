@@ -1,0 +1,22 @@
+{
+  "id": "zhuanbidao",
+  "handle": "zhuanbidao",
+  "x_user_id": "1726922481141940224",
+  "avatar_url": "https://pbs.twimg.com/profile_images/2102745563670392832/pEf7TEY7_200x200.jpg",
+  "profile_url": "https://x.com/zhuanbidao",
+  "overview": "提交人把这个账号和虚假抽奖骗互动的账号放在一起。首页没有看到手机抽奖帖。2026-10-24 的置顶公开帖是币安推荐注册福利：关注、用链接注册、完成 KYC 后私信，承诺每人 20USDT。推荐码没有抄进记录。先标待核对。这不是法院判决。",
+  "former_handles": [],
+  "current_handle": null,
+  "display_name": "",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-10-29 公开主页还能打开。没有登录，首页往后的帖和搜索结果看不到。",
+  "availability_checked_at": "2026-10-29",
+  "availability_lock": false,
+  "updated": "2026-10-29",
+  "sources_are_public": true,
+  "editor_note": "公开显示名没有写入。头像用的是公开头像地址。没有登录，只能核对公开主页上直接看得到的帖。",
+  "behaviors": [
+    "data/behaviors/zhuanbidao/referral-bounty.json"
+  ]
+}

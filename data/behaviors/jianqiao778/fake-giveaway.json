@@ -1,0 +1,13 @@
+{
+  "id": "fake-giveaway",
+  "categories": [
+    "false_info"
+  ],
+  "title": "用抽手机换关注和一键三连",
+  "summary": "公开帖宣布抽 5 台顶配 iPhone，要求关注、一键三连和评论，并让 Grok 抽取。",
+  "account_id": "jianqiao778",
+  "verification": null,
+  "evidence": [
+    "evidence/jianqiao778/2026-10-28-iphone-giveaway.json"
+  ]
+}

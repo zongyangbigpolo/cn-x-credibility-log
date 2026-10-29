@@ -1,0 +1,14 @@
+{
+  "id": "fake-giveaway",
+  "categories": [
+    "false_info"
+  ],
+  "title": "连续发抽手机帖换互动和关注",
+  "summary": "同一天的公开帖用 iPhone 抽奖换点赞、转发、评论，并要求关注别的账号，否则取消资格。",
+  "account_id": "bitcoin-alpha-x",
+  "verification": null,
+  "evidence": [
+    "evidence/bitcoin-alpha-x/2026-10-28-iphone-number-draw.json",
+    "evidence/bitcoin-alpha-x/2026-10-28-follow-gate.json"
+  ]
+}

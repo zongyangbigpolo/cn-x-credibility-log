@@ -1,0 +1,13 @@
+{
+  "id": "fake-giveaway",
+  "categories": [
+    "false_info"
+  ],
+  "title": "用抽手机换关注、点赞和转发",
+  "summary": "公开帖宣布抽 10 台 iPhone Duo，要求关注、一键三连和评论，并让 Grok 抽奖。同一条帖又写抽粉丝送给作者。",
+  "account_id": "xupaopaogm",
+  "verification": null,
+  "evidence": [
+    "evidence/xupaopaogm/2026-10-28-iphone-giveaway.json"
+  ]
+}
