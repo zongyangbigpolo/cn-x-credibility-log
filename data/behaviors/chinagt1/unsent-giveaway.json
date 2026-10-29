@@ -1,0 +1,13 @@
+{
+  "id": "unsent-giveaway",
+  "account_id": "chinagt1",
+  "categories": [
+    "false_info"
+  ],
+  "title": "抽 iPhone 的截止时间已过，首页没有发奖说明",
+  "summary": "公开帖承诺获奖者获赠 iPhone Duo。截止后首页能看到的新帖没有开奖或寄出说明。",
+  "verification": null,
+  "evidence": [
+    "evidence/chinagt1/2026-10-26-iphone-promise.json"
+  ]
+}

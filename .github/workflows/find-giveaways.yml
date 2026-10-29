@@ -1,0 +1,40 @@
+name: 查找未发奖的中文抽奖帖
+
+on:
+  schedule:
+    - cron: "41 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: find-giveaways
+  cancel-in-progress: false
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 搜索公开帖
+        run: node scripts/find-iphone-giveaways.mjs --write > "$RUNNER_TEMP/find.md"
+      - name: 打开拉取请求
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then
+            echo "没有新的未发奖抽奖记录"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add accounts data evidence 阅读.md index.html
+          git commit -m "记录公开搜索到的未发奖抽奖帖"
+          git fetch origin giveaway-finds || true
+          git push --force-with-lease origin "HEAD:refs/heads/giveaway-finds"
+          gh pr create --base main --head giveaway-finds --title "记录公开搜索到的未发奖抽奖帖" --body-file "$RUNNER_TEMP/find.md" || true

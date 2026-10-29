@@ -1,0 +1,22 @@
+{
+  "id": "jiucaicai250131",
+  "handle": "jiucaicai250131",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": "1884981760481751040",
+  "avatar_url": "https://pbs.twimg.com/profile_images/1983761143840808960/k6iqSQKm_200x200.jpg",
+  "display_name": "",
+  "profile_url": "https://x.com/jiucaicai250131",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-10-29 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+  "availability_checked_at": "2026-10-29",
+  "availability_lock": false,
+  "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了发福利或抽手机，又写把名额或手机送给作者，所以不能把它当成已经发奖。2026-10-29 公开资料粉丝数约 25052，不超过 100 万。这不是法院判决。",
+  "updated": "2026-10-29",
+  "sources_are_public": true,
+  "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+  "behaviors": [
+    "data/behaviors/jiucaicai250131/fake-giveaway.json"
+  ]
+}

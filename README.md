@@ -28,4 +28,4 @@ flowchart LR
 
 账号文件里的 `behaviors` 指向 `data/behaviors/`。行为文件里的 `evidence` 指向 `evidence/`。改名后编号和文件夹都不搬，曾用名仍可搜索。
 
-GitHub 每周一核对正式账号。发现已停用或已改名时，会开一个拉取请求把标记写上。示例账号不核对。怎么加记录、怎么锁定标记，见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+GitHub 每周一核对正式账号。发现已停用或已改名时，会开一个拉取请求把标记写上。示例账号不核对。同一天也会用公开搜索找中文抽 iPhone 的帖：粉丝超过 100 万的不收；只有帖子自己写明不是作者发奖，才会自动写成待核对。怎么加记录、怎么锁定标记，见 [CONTRIBUTING.md](CONTRIBUTING.md)。

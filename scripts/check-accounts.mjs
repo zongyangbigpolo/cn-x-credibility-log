@@ -296,5 +296,8 @@ async function main() {
   console.log(lines.join("\n"));
 }
 
-if (selfTest && !write) runSelfTest();
-else main();
+const isDirectRun = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+if (isDirectRun) {
+  if (selfTest && !write) runSelfTest();
+  else main();
+}

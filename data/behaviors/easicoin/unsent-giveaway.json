@@ -1,0 +1,13 @@
+{
+  "id": "unsent-giveaway",
+  "account_id": "easicoin",
+  "categories": [
+    "false_info"
+  ],
+  "title": "写了开奖日期，首页没有发奖说明",
+  "summary": "公开帖承诺抽 iPhone 17 Pro，开奖日写的是 2026-05-30。之后的首页帖没有开奖或寄出说明。",
+  "verification": null,
+  "evidence": [
+    "evidence/easicoin/2026-05-07-iphone-promise.json"
+  ]
+}

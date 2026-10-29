@@ -1,0 +1,22 @@
+{
+  "id": "easicoin",
+  "handle": "Easicoin_",
+  "x_user_id": "3228116757",
+  "avatar_url": "https://pbs.twimg.com/profile_images/1998226575259766784/V2dSjIaX_200x200.jpg",
+  "profile_url": "https://x.com/Easicoin_",
+  "overview": "公开帖用中文抽最新款 iPhone 17 Pro，写明开奖时间是 2026-05-30，并说会通过官方渠道发放。2026-10-29 的公开主页首页没有这条抽奖的开奖或寄出说明。没有登录，看不到全部历史，所以先标待核对。公开资料粉丝数约 2499，不超过 100 万。这不是法院判决。",
+  "former_handles": [],
+  "current_handle": null,
+  "display_name": "",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-10-29 公开主页还能打开。首页后来的帖没有写开奖或寄出。粉丝数不超过 100 万。",
+  "availability_checked_at": "2026-10-29",
+  "availability_lock": false,
+  "updated": "2026-10-29",
+  "sources_are_public": true,
+  "editor_note": "公开显示名没有写入。没有登录。粉丝数不超过 100 万。截止后只看了公开主页首页，没有看到发奖或寄出说明。",
+  "behaviors": [
+    "data/behaviors/easicoin/unsent-giveaway.json"
+  ]
+}

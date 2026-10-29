@@ -1,0 +1,13 @@
+{
+  "id": "fake-giveaway",
+  "account_id": "luckywed112",
+  "categories": [
+    "false_info"
+  ],
+  "title": "中文抽手机帖写明不是作者发奖",
+  "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+  "verification": null,
+  "evidence": [
+    "evidence/luckywed112/2026-10-28-iphone-giveaway.json"
+  ]
+}

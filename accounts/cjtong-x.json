@@ -1,0 +1,22 @@
+{
+  "id": "cjtong-x",
+  "handle": "cjtong_X",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": "1018518735487885312",
+  "avatar_url": "https://pbs.twimg.com/profile_images/2054195498446397440/y_SXIXkf_200x200.jpg",
+  "display_name": "",
+  "profile_url": "https://x.com/cjtong_X",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-10-29 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+  "availability_checked_at": "2026-10-29",
+  "availability_lock": false,
+  "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了发福利或抽手机，又写把名额或手机送给作者，所以不能把它当成已经发奖。2026-10-29 公开资料粉丝数约 3604，不超过 100 万。这不是法院判决。",
+  "updated": "2026-10-29",
+  "sources_are_public": true,
+  "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+  "behaviors": [
+    "data/behaviors/cjtong-x/fake-giveaway.json"
+  ]
+}
