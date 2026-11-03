@@ -143,6 +143,89 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "1shenyingheisou",
+      "handle": "1shenyingheisou",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1531184234416984064",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2083032502961369088/_Cw9Upgm_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/1shenyingheisou",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了抽手机，又写把手机送给作者，所以不能把它当成已经发奖。2026-11-03 公开资料粉丝数约 8302，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "1shenyingheisou",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-28-iphone-giveaway",
+              "account_id": "1shenyingheisou",
+              "date": "2026-10-28",
+              "url": "https://x.com/1shenyingheisou/status/2115418742641357001",
+              "excerpt": "直接抽 5 台 iPhone 18 Pro Max。抽中的粉丝送给我，说不定送给我 iPhone 18 Pro Max 就是你。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aixparty",
+      "handle": "aixparty",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1945999632200265728",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2093286996215050240/9anZwQMc_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/aixparty",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开帖用中文抽 iPhone 换点赞、评论和转发，同一条又写把手机送给作者，并写抽中后私信收款码。2026-11-03 公开资料粉丝数约 1766，不超过 100 万。没有登录，这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录，也没有保存收款码。只收录帖子自己写明不是作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "aixparty",
+          "categories": [
+            "false_info",
+            "scam_funnel"
+          ],
+          "title": "抽奖帖写明由粉丝送手机，并私信收款",
+          "summary": "公开帖用抽 iPhone 换互动。同一条写粉丝把手机送给作者，还写抽中后私信收款码。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-09-13-iphone-giveaway",
+              "account_id": "aixparty",
+              "date": "2026-09-13",
+              "url": "https://x.com/aixparty/status/2099079632137994456",
+              "excerpt": "随机抽 3 个粉丝送我 Iphone Duo。点赞评论转发即可。中奖的我会私信你收款码。",
+              "why_it_matters": "这条公开帖不是作者发奖。它写粉丝送手机，并写私下发收款码。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "anni22022",
       "handle": "Anni22022",
       "x_user_id": "1499731647172050947",
@@ -397,6 +480,48 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "cryptoyuxin",
+      "handle": "CryptoYuXin",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1129617183720562688",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2095191025639911426/0MHTvYLX_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/CryptoYuXin",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开帖用中文抽 iPhone 换点赞、评论和转发，同一条又写把手机送给作者，并写抽中后私信收款码。2026-11-03 公开资料粉丝数约 58056，不超过 100 万。没有登录，这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录，也没有保存收款码。只收录帖子自己写明不是作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "cryptoyuxin",
+          "categories": [
+            "false_info",
+            "scam_funnel"
+          ],
+          "title": "抽奖帖写明由粉丝送手机，并私信收款",
+          "summary": "公开帖用抽 iPhone 换互动。同一条写粉丝把手机送给作者，还写抽中后私信收款码。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-09-14-iphone-giveaway",
+              "account_id": "cryptoyuxin",
+              "date": "2026-09-14",
+              "url": "https://x.com/CryptoYuXin/status/2099355797818151083",
+              "excerpt": "随机抽2个粉丝，每人送我一台 iPhone 18 Pro Max。点赞评论转发即可。抽中后我会私信你收款码。",
+              "why_it_matters": "这条公开帖不是作者发奖。它写粉丝送手机，并写私下发收款码。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "easicoin",
       "handle": "Easicoin_",
       "x_user_id": "3228116757",
@@ -473,6 +598,47 @@ window.CREDIBILITY_LOG = {
               "excerpt": "本次随机抽取 10 位幸运粉丝。参与方式：点赞本帖，评论区留言「抽我」，转发还能增加中奖概率。特别说明：中奖的 10 位幸运粉丝，均可自愿赠送我一台 iPhone Duo。主打一个反向抽奖，别人宠粉，我靠粉丝宠。",
               "why_it_matters": "这条帖要求互动，但自己写成反向玩笑，不是承诺给粉丝发奖。不能和同批奖品承诺帖当成同一件事。",
               "account_id": "gaooofy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hyhongyu8",
+      "handle": "HYhongyu8",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1630829886876286976",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2088582479020199936/Zk-suaz9_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/HYhongyu8",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了抽手机，又写把手机送给作者，所以不能把它当成已经发奖。2026-11-03 公开资料粉丝数约 30351，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "hyhongyu8",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-28-iphone-giveaway",
+              "account_id": "hyhongyu8",
+              "date": "2026-10-28",
+              "url": "https://x.com/HYhongyu8/status/2115398074348794138",
+              "excerpt": "本次抽10台 iPhone Duo 2T。24小时后开奖。抽10个粉丝送我。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
             }
           ]
         }
@@ -770,6 +936,47 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "leo139999",
+      "handle": "Leo139999",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1718734973052542976",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2094791078239240193/3KUngyUQ_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/Leo139999",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了抽手机，又写把手机送给作者，所以不能把它当成已经发奖。2026-11-03 公开资料粉丝数约 2614，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "leo139999",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-26-iphone-giveaway",
+              "account_id": "leo139999",
+              "date": "2026-10-26",
+              "url": "https://x.com/Leo139999/status/2114793165018587558",
+              "excerpt": "本次抽10台 iPhone Duo。不要等别人抽到了才后悔没有参加，抽10个粉丝送给我。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "luckywed112",
       "handle": "Luckywed112",
       "former_handles": [],
@@ -804,6 +1011,47 @@ window.CREDIBILITY_LOG = {
               "date": "2026-10-28",
               "url": "https://x.com/Luckywed112/status/2115418826238247200",
               "excerpt": "本帖“一键三连” 3. 留下评论☎️ 本帖发出72小时后，我联系 @grok 手速快一点，抽5个粉丝送给我，公平公正，无内幕，不骗人。。。。。。。 。。。。。。。。。。。。。。。。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moonquakes-ai",
+      "handle": "Moonquakes_ai",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "2063778586021261312",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2103524619525423104/Ug4s0D4X_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/Moonquakes_ai",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了抽手机，又写把手机送给作者，所以不能把它当成已经发奖。2026-11-03 公开资料粉丝数约 9089，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "moonquakes-ai",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-28-iphone-giveaway",
+              "account_id": "moonquakes-ai",
+              "date": "2026-10-28",
+              "url": "https://x.com/Moonquakes_ai/status/2115336396286378002",
+              "excerpt": "本次抽10台 iPhone Duo。24小时以后让抽奖。抽10个粉丝送给我，人人都有机会。",
               "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
             }
           ]
@@ -893,6 +1141,47 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "qiaonanwolf",
+      "handle": "qiaonanwolf",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1823535227052195840",
+      "avatar_url": "https://pbs.twimg.com/profile_images/1932455186825666561/ZHS-QW2f_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/qiaonanwolf",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了抽手机，又写把手机送给作者，所以不能把它当成已经发奖。2026-11-03 公开资料粉丝数约 4452，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "qiaonanwolf",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-27-iphone-giveaway",
+              "account_id": "qiaonanwolf",
+              "date": "2026-10-27",
+              "url": "https://x.com/qiaonanwolf/status/2114888248166416792",
+              "excerpt": "这次我来抽，抽101台 iPhone Duo。101位粉丝，每位粉丝给我买一台 iPhone Duo。中奖的朋友负责下单，我负责晒单。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "qing2049",
       "handle": "qing2049",
       "x_user_id": "1425611034375507970",
@@ -928,6 +1217,88 @@ window.CREDIBILITY_LOG = {
               "excerpt": "公开简介写 Crypto、Defi、RWA 和 AI。首页当时能看到的帖不是抽奖。",
               "why_it_matters": "这只说明核对时首页没有抽奖帖，不是证明没有发过。搜索要登录，更早的帖这次没打开。",
               "account_id": "qing2049"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rasonva26",
+      "handle": "RasonVA26",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1036933655627628544",
+      "avatar_url": "https://pbs.twimg.com/profile_images/1935641143653335040/xs4-MfSY_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/RasonVA26",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了抽手机，又写把手机送给作者，所以不能把它当成已经发奖。2026-11-03 公开资料粉丝数约 4951，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "rasonva26",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-20-iphone-giveaway",
+              "account_id": "rasonva26",
+              "date": "2026-10-20",
+              "url": "https://x.com/RasonVA26/status/2112451798594437496",
+              "excerpt": "庆祝5000粉丝达标，抽奖啦，iPhone Duo。我会从评论区随机抽一位参加者，让他送我一台 iPhone Duo。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rkiojejdmnd",
+      "handle": "rkiojejdmnd",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "2100863057677500418",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2103734359664799744/9x_hKdg__200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/rkiojejdmnd",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了抽手机，又写把手机送给作者，所以不能把它当成已经发奖。2026-11-03 公开资料粉丝数约 2794，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "rkiojejdmnd",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-28-iphone-giveaway",
+              "account_id": "rkiojejdmnd",
+              "date": "2026-10-28",
+              "url": "https://x.com/rkiojejdmnd/status/2115384665104134177",
+              "excerpt": "抽取1位幸运粉丝，送我一台 iPhone Duo。评论区留言：我愿意送你一台 iPhone Duo。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
             }
           ]
         }
@@ -1092,6 +1463,47 @@ window.CREDIBILITY_LOG = {
               "excerpt": "本次抽 3 台 xiaomi Duo。人人都有机会。参与方式：关注我，一键三连本帖，留下你的评论区。24h以后我会让@grok 来给我抽奖，保证公平公正公开。",
               "why_it_matters": "这条公开帖用抽手机换关注、点赞、转发和评论。提交人说明这是骗互动。帖子没有证明奖品已经发出。",
               "account_id": "starcoreron"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vc0jt",
+      "handle": "vc0jt",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "2055941738964152320",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2109190715523956736/0B1V0crW_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/vc0jt",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-03 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-03",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了抽手机，又写把手机送给作者，所以不能把它当成已经发奖。2026-11-03 公开资料粉丝数约 1353，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-03",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "vc0jt",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-26-iphone-giveaway",
+              "account_id": "vc0jt",
+              "date": "2026-10-26",
+              "url": "https://x.com/vc0jt/status/2114674907015459193",
+              "excerpt": "我也来抽 iPhone Duo，转发加关注这条推文抽 10 人，一人给我发十台。抽中必须发。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
             }
           ]
         }
