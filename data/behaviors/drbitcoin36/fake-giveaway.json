@@ -1,0 +1,14 @@
+{
+  "id": "fake-giveaway",
+  "account_id": "drbitcoin36",
+  "categories": [
+    "false_info",
+    "scam_funnel"
+  ],
+  "title": "抽奖帖写明由粉丝送手机，并私信收款",
+  "summary": "公开帖用抽 iPhone 换互动。同一条写粉丝把手机送给作者，还写抽中后私信收款码。",
+  "verification": null,
+  "evidence": [
+    "evidence/drbitcoin36/2026-09-13-iphone-giveaway.json"
+  ]
+}
