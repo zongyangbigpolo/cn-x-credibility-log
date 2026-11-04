@@ -9,10 +9,12 @@
     return;
   }
 
+  const REPO = "zongyangbigpolo/cn-x-credibility-log";
   const byId = Object.fromEntries(log.accounts.map((account) => [account.id, account]));
   const label = (list, id) => (list.find((item) => item.id === id) || {}).label || id;
   const plain = (list, id) => (list.find((item) => item.id === id) || {}).plain || "";
   let selected = location.hash.slice(1);
+  let actionNote = "";
 
   function el(tag, attrs, children) {
     const node = document.createElement(tag);
@@ -106,7 +108,9 @@
         el("span", { class: "card-body" }, [
           el("span", { class: "card-top" }, [
             el("strong", {}, [account.display_name || `@${account.handle}`]),
-            el("span", { class: `pill ${account.availability}` }, [label(log.availability, account.availability)]),
+            el("span", { class: `pill ${account.status === "liar" ? "liar" : account.availability}` }, [
+              account.status === "liar" ? "Liar" : label(log.availability, account.availability),
+            ]),
           ]),
           el("span", { class: "card-handle" }, [`@${account.current_handle || account.handle} · ${account.behaviors.length} 项`]),
           el("span", { class: "card-overview" }, [account.overview]),
@@ -117,11 +121,49 @@
     });
   }
 
+  function issueUrl(template, fields) {
+    const params = new URLSearchParams({ template, ...fields });
+    return `https://github.com/${REPO}/issues/new?${params}`;
+  }
+
   function select(id) {
     selected = id;
+    actionNote = "";
     history.replaceState(null, "", `#${id}`);
     render();
     report.scrollIntoView({ block: "start" });
+  }
+
+  async function confirmLiar(account) {
+    const accepted = window.confirm(`确认把 @${account.handle} 标为 Liar？\n\n这只表示维护者确认了现有公开记录，不是法院判决。质疑的人不会因此被标成 Liar。`);
+    if (!accepted) return;
+    const title = `确认 Liar: ${account.id}`;
+    const body = `account_id: ${account.id}\n`;
+    const token = localStorage.getItem("cnxlog-token");
+    if (token) {
+      actionNote = "正在提交确认…";
+      render();
+      try {
+        const response = await fetch(`https://api.github.com/repos/${REPO}/issues`, {
+          method: "POST",
+          headers: {
+            accept: "application/vnd.github+json",
+            authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ title, body }),
+        });
+        if (!response.ok) throw new Error(String(response.status));
+        actionNote = "已提交。确认写进名单后，刷新页面就能看到 Liar。插件会读取同一份名单。";
+        render();
+        return;
+      } catch {
+        actionNote = "直接提交没有成功，已改为打开确认页。";
+        render();
+      }
+    }
+    window.open(issueUrl("confirm-liar.yml", { title, account_id: account.id }), "_blank", "noopener,noreferrer");
+    actionNote = "已打开确认页。用维护者账号提交后，才会写进公开名单。";
+    render();
   }
 
   function renderReport(account) {
@@ -129,6 +171,7 @@
       report.replaceChildren(el("div", { class: "empty" }, [
         el("h2", {}, ["先选一个账号"]),
         el("p", {}, ["在左边搜索或点一个账号。打开后会看到账号总览，以及全部不诚信行为。标成示例的不是真实账号。"]),
+        el("p", {}, ["要提交公开记录，用页脚的「提交一条公开记录」。"]),
       ]));
       return;
     }
@@ -188,8 +231,43 @@
     ])));
     children.push(el("p", {}, ["不诚信行为一览："]), list, el("h3", {}, ["全部不诚信行为"]));
     account.behaviors.forEach((behavior, index) => children.push(renderBehavior(account, behavior, index)));
+    if (account.status !== "example") children.push(...renderActions(account));
     if (account.editor_note) children.push(el("p", { class: "muted" }, [account.editor_note]));
     report.replaceChildren(...children);
+  }
+
+  function renderActions(account) {
+    const dispute = el("a", {
+      class: "text-button",
+      href: issueUrl("dispute-record.yml", {
+        title: `质疑: @${account.handle}`,
+        handle: account.handle,
+        profile: account.profile_url,
+      }),
+      target: "_blank",
+      rel: "noopener noreferrer",
+    }, ["我有质疑"]);
+    const row = el("div", { class: "actions" }, [dispute]);
+    if (account.status !== "retracted") {
+      const on = account.status === "liar";
+      const button = el("button", {
+        type: "button",
+        class: "switch",
+        role: "switch",
+        "aria-checked": on ? "true" : "false",
+      }, [on ? "已标为 Liar" : "确认标为 Liar"]);
+      if (!on) button.addEventListener("click", () => confirmLiar(account));
+      row.append(button);
+    }
+    const notes = [
+      el("p", { class: "muted" }, [
+        account.status === "liar"
+          ? "这个账号已在屏蔽名单里。安装仓库 extension 文件夹后，打开 X 可以一键屏蔽，不会自动发言。"
+          : "质疑只是公开说明哪里对不上，不会把人标成 Liar。确认开关只有维护者提交后才写入名单。",
+      ]),
+    ];
+    if (actionNote) notes.push(el("p", { class: "action-note" }, [actionNote]));
+    return [el("h3", {}, ["提交和确认"]), row, ...notes];
   }
 
   function renderBehavior(account, behavior, index) {
@@ -247,6 +325,28 @@
   themeButton.addEventListener("click", () => {
     applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
   });
+  const tokenInput = document.querySelector("#token");
+  const tokenState = document.querySelector("#token-state");
+  function showTokenState() {
+    if (!tokenState) return;
+    tokenState.textContent = localStorage.getItem("cnxlog-token")
+      ? "这台浏览器已保存 Token。确认开关会直接提交。"
+      : "还没保存 Token。确认开关会打开 GitHub 确认页。";
+  }
+  document.querySelector("#save-token")?.addEventListener("click", () => {
+    const value = tokenInput?.value.trim();
+    if (!value) return;
+    localStorage.setItem("cnxlog-token", value);
+    tokenInput.value = "";
+    showTokenState();
+  });
+  document.querySelector("#clear-token")?.addEventListener("click", () => {
+    localStorage.removeItem("cnxlog-token");
+    if (tokenInput) tokenInput.value = "";
+    showTokenState();
+  });
+  showTokenState();
+
   const savedTheme = localStorage.getItem("cnxlog-theme");
   if (savedTheme === "dark" || savedTheme === "light") applyTheme(savedTheme);
   else if (matchMedia("(prefers-color-scheme: dark)").matches) applyTheme("dark");

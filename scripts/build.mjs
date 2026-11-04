@@ -8,6 +8,7 @@ const errors = [];
 
 const STATUSES = [
   { id: "documented", label: "已整理", plain: "已经按公开帖整理进页面。这不是法院判决。" },
+  { id: "liar", label: "Liar", plain: "维护者已确认这条公开记录。这不是法院判决，也不号召去骚扰。" },
   { id: "needs_review", label: "待核对", plain: "先放进来，还要再对一次公开帖。" },
   { id: "retracted", label: "已撤回", plain: "这条不再作为有效记录，留在这里是为了不悄悄删掉。" },
   { id: "example", label: "示例", plain: "虚构的，只用来看版式。" },
@@ -245,7 +246,7 @@ function loadAccounts() {
     if (!usedEvidence.has(rel)) fail(rel, "没有任何行为连接到这条证据");
   }
 
-  const rank = { documented: 0, needs_review: 1, retracted: 2, example: 3 };
+  const rank = { liar: 0, documented: 1, needs_review: 2, retracted: 3, example: 4 };
   accounts.sort((a, b) => rank[a.status] - rank[b.status] || a.handle.localeCompare(b.handle));
   return accounts;
 }
@@ -259,21 +260,38 @@ if (errors.length) {
 const payload = { version: 1, categories, statuses: STATUSES, availability: AVAILABILITY, accounts };
 const logJs = `/* 由 scripts/build.mjs 生成，不要手改。改 accounts、data、evidence 后运行 node scripts/build.mjs */\nwindow.CREDIBILITY_LOG = ${JSON.stringify(payload, null, 2)};\n`;
 const reading = renderReading(payload);
+const liars = renderLiars(accounts);
 const logPath = path.join(root, "data", "log.js");
 const readingPath = path.join(root, "阅读.md");
+const liarsPaths = [path.join(root, "data", "liars.json"), path.join(root, "extension", "liars.json")];
 
 if (check) {
   const same = fs.existsSync(logPath) && fs.readFileSync(logPath, "utf8") === logJs
-    && fs.existsSync(readingPath) && fs.readFileSync(readingPath, "utf8") === reading;
+    && fs.existsSync(readingPath) && fs.readFileSync(readingPath, "utf8") === reading
+    && liarsPaths.every((file) => fs.existsSync(file) && fs.readFileSync(file, "utf8") === liars);
   if (!same) {
     console.error("阅读页和数据不一致。请运行 node scripts/build.mjs 后重新提交。");
     process.exit(1);
   }
   console.log(`检查通过：${accounts.length} 个账号。`);
 } else {
+  fs.mkdirSync(path.join(root, "extension"), { recursive: true });
   fs.writeFileSync(logPath, logJs);
   fs.writeFileSync(readingPath, reading);
-  console.log(`已生成 data/log.js 和 阅读.md（${accounts.length} 个账号）。`);
+  for (const file of liarsPaths) fs.writeFileSync(file, liars);
+  console.log(`已生成 data/log.js、阅读.md 和 liars.json（${accounts.length} 个账号）。`);
+}
+
+function renderLiars(items) {
+  const list = items.filter((account) => account.status === "liar").map((account) => ({
+    id: account.id,
+    handle: account.handle,
+    current_handle: account.current_handle,
+    former_handles: account.former_handles,
+    x_user_id: account.x_user_id,
+    profile_url: account.profile_url,
+  }));
+  return `${JSON.stringify({ version: 1, accounts: list }, null, 2)}\n`;
 }
 
 function labelOf(list, id) {
@@ -288,7 +306,9 @@ function renderReading(data) {
     "",
     "搜到一个账号后，先看账号总览，再看它的全部不诚信行为。每项行为下面是公开帖证据。",
     "",
-    "不收录真实姓名、电话、住址、身份证、私人聊天。标成「示例」的不是真实账号。已整理不等于法院判决。",
+    "不收录真实姓名、电话、住址、身份证、私人聊天。标成「示例」的不是真实账号。已整理或 Liar 都不等于法院判决。",
+    "",
+    "要提交一条公开记录，或质疑某条记录，用 GitHub Issues 里的对应表单。质疑不会把人标成 Liar。只有维护者确认后，状态才会变成 Liar。",
     "",
     "每个账号按平台用户编号唯一追踪。改名、停用都还是这一条。只有另外开一个新号，才不会自动并进来。",
     "",

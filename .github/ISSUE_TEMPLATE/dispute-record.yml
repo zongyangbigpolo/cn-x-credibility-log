@@ -1,0 +1,42 @@
+name: 质疑一条记录
+description: 觉得某条公开记录对不上，用这个表单说明。这不会把任何人标成 Liar。
+title: "质疑: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        只写已经公开的内容。不要填写真实姓名、电话、住址、身份证或私人聊天。
+        提交质疑不会自动改记录，也不会把质疑的人标成 Liar。
+  - type: input
+    id: handle
+    attributes:
+      label: 公开账号名
+      placeholder: example_handle
+    validations:
+      required: true
+  - type: input
+    id: profile
+    attributes:
+      label: 主页链接
+      placeholder: https://x.com/example_handle
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 哪里对不上
+      description: 用一段人话说明。如果有公开帖能对上，把链接写在下面。
+    validations:
+      required: true
+  - type: input
+    id: post
+    attributes:
+      label: 相关公开帖
+      placeholder: https://x.com/example_handle/status/123
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我确认没有填写真实姓名、电话、住址、身份证或私人聊天
+          required: true

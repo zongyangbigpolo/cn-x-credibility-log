@@ -1,0 +1,79 @@
+name: 确认标为 Liar
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: confirm-liar
+  cancel-in-progress: false
+
+jobs:
+  confirm:
+    if: >-
+      (github.event.issue.user.login == 'zongyangbigpolo' || github.event.issue.user.login == 'Polo-Li_citrix') &&
+      startsWith(github.event.issue.title, '确认 Liar:')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: 写入 Liar 状态
+        env:
+          CONFIRM_TITLE: ${{ github.event.issue.title }}
+          CONFIRM_BODY: ${{ github.event.issue.body }}
+        run: node scripts/confirm-liar.mjs --from-env
+      - name: 重新生成阅读页和屏蔽名单
+        run: node scripts/build.mjs
+      - name: 提交
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add accounts data/log.js data/liars.json extension/liars.json "阅读.md"
+          if git diff --cached --quiet; then
+            echo "没有新的改动"
+          else
+            git commit -m "Confirm a public record as Liar"
+            git push
+          fi
+      - name: 只发布阅读页
+        run: |
+          mkdir -p _site/css _site/js _site/data _site/assets/avatars
+          cp index.html .nojekyll _site/
+          cp css/style.css _site/css/
+          cp js/app.js _site/js/
+          cp data/log.js data/liars.json _site/data/
+          if compgen -G "assets/avatars/*" > /dev/null; then
+            cp assets/avatars/* _site/assets/avatars/
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: 关闭确认单
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "已按这条确认单处理。Liar 只表示维护者确认了现有公开记录，不是法院判决。屏蔽插件会读取更新后的名单。"
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: "closed"
+            });

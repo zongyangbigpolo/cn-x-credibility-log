@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "公开记录屏蔽",
+  "description": "在 X 上一键屏蔽这份公开记录里已确认的 Liar。不会自动屏蔽，也不会替你发言。",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "屏蔽 Liar"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["cookies", "storage"],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*",
+    "https://zongyangbigpolo.github.io/*",
+    "https://raw.githubusercontent.com/*"
+  ]
+}

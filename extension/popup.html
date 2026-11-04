@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>屏蔽 Liar</title>
+  <style>
+    body { width: 280px; margin: 0; padding: 14px; font: 14px/1.45 -apple-system, "PingFang SC", sans-serif; color: #0f1419; }
+    button { width: 100%; border: 0; border-radius: 999px; padding: 8px 12px; background: #f4212e; color: white; font: inherit; cursor: pointer; }
+    button:disabled { opacity: .6; }
+    p { margin: 8px 0; color: #536471; }
+    ul { margin: 8px 0; padding-left: 1.1rem; }
+  </style>
+</head>
+<body>
+  <strong>一键屏蔽 Liar</strong>
+  <p id="summary">正在读取名单…</p>
+  <ul id="names"></ul>
+  <button type="button" id="block">一键屏蔽</button>
+  <p id="result"></p>
+  <script src="popup.js"></script>
+</body>
+</html>

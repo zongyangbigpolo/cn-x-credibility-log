@@ -248,6 +248,21 @@ a { color: var(--blue); }
 }
 .pill.renamed, .stamp.renamed, .banner.renamed { background: var(--amber-soft); color: var(--amber); }
 .pill.example, .stamp.example, .pill.unchecked, .stamp.unchecked { background: var(--blue-soft); color: var(--blue); }
+.pill.liar, .stamp.liar { background: var(--red-soft); color: var(--red); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.switch, .text-button, .maintainer button {
+  border: 1px solid var(--line-strong);
+  background: var(--panel);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--ink);
+}
+.switch[aria-checked="true"] { background: var(--red-soft); color: var(--red); border-color: transparent; }
+.action-note { border-radius: 12px; padding: 10px 12px; background: var(--blue-soft); color: var(--ink); }
+.maintainer { margin-top: 14px; }
+.maintainer input { width: min(100%, 360px); margin: 8px 8px 8px 0; padding: 6px 10px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--panel); }
 .banner { border-radius: 12px; padding: 10px 12px; margin: 14px 0 0; }
 .stats {
   display: grid;

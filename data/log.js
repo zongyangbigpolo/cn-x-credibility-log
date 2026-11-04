@@ -45,6 +45,11 @@ window.CREDIBILITY_LOG = {
       "plain": "已经按公开帖整理进页面。这不是法院判决。"
     },
     {
+      "id": "liar",
+      "label": "Liar",
+      "plain": "维护者已确认这条公开记录。这不是法院判决，也不号召去骚扰。"
+    },
+    {
       "id": "needs_review",
       "label": "待核对",
       "plain": "先放进来，还要再对一次公开帖。"

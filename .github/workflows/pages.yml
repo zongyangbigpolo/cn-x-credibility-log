@@ -31,7 +31,7 @@ jobs:
           cp index.html .nojekyll _site/
           cp css/style.css _site/css/
           cp js/app.js _site/js/
-          cp data/log.js _site/data/
+          cp data/log.js data/liars.json _site/data/
           if compgen -G "assets/avatars/*" > /dev/null; then
             cp assets/avatars/* _site/assets/avatars/
           fi

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>公开记录</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f1419'/%3E%3Cpath d='M8 12h16M8 17h16M8 22h10' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="css/style.css?v=9">
+  <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 <body>
   <a class="skip" href="#report">跳到账号内容</a>
@@ -29,6 +29,7 @@
     <aside class="rail" aria-label="账号列表">
       <p id="result-count" class="count" aria-live="polite"></p>
       <p class="hint">每个账号按平台用户编号唯一追踪。改名、停用都还是这一条。只有另外开一个新号，才不会自动并进来。</p>
+      <p class="hint"><a href="https://github.com/zongyangbigpolo/cn-x-credibility-log/issues/new?template=new-record.yml">提交一条公开记录</a>。只填已经公开的帖。</p>
       <div id="directory" class="directory"></div>
     </aside>
     <section id="report" class="report" aria-live="polite"></section>
@@ -39,10 +40,21 @@
       <li>不记录真实姓名、电话、住址、身份证、私人聊天</li>
       <li>每个账号按平台用户编号唯一追踪。改名、停用都还是这一条。只有另外开一个新号，才不会自动并进来。</li>
       <li>这不是法院判决，也不号召去骚扰任何人</li>
+      <li><a href="https://github.com/zongyangbigpolo/cn-x-credibility-log/issues/new?template=new-record.yml">提交一条公开记录</a>。不会改代码也可以。</li>
+      <li>打开账号后可以点「我有质疑」。质疑不会把人标成 Liar。</li>
+      <li>维护者确认后才会标成 Liar。<a href="https://github.com/zongyangbigpolo/cn-x-credibility-log/tree/main/extension">屏蔽插件</a>只屏蔽这份已确认名单。</li>
     </ul>
+    <details class="maintainer">
+      <summary>维护者：保存 Token 后，确认开关点一次就提交</summary>
+      <p>Token 只留在这台浏览器，不会写进仓库。需要这个仓库的 Issues 写权限。没有 Token 时，开关会打开确认页，要用 zongyangbigpolo 或 Polo-Li_citrix 提交。</p>
+      <input id="token" type="password" autocomplete="off" placeholder="GitHub Token">
+      <button type="button" id="save-token">保存在这台浏览器</button>
+      <button type="button" id="clear-token">清除</button>
+      <p id="token-state" class="muted"></p>
+    </details>
   </footer>
   <noscript><p class="noscript">浏览器没有打开脚本。请改看仓库里的「阅读.md」。</p></noscript>
-  <script src="data/log.js?v=18"></script>
-  <script src="js/app.js?v=9"></script>
+  <script src="data/log.js?v=19"></script>
+  <script src="js/app.js?v=10"></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+name: 确认标为 Liar
+description: 仅维护者使用。提交后才会把已有公开记录标成 Liar。
+title: "确认 Liar: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        只有仓库维护者提交才会写入。这不是法院判决，也不号召去骚扰。
+        质疑一条记录请换「质疑一条记录」，不要用这个表单。
+  - type: input
+    id: account_id
+    attributes:
+      label: 账号编号
+      description: 阅读页账号文件的稳定编号，例如 okx-service。不要填真人姓名。
+      placeholder: okx-service
+    validations:
+      required: true

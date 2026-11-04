@@ -18,3 +18,4 @@ jobs:
       - run: node scripts/build.mjs --check
       - run: node scripts/check-accounts.mjs --self-test
       - run: node scripts/find-iphone-giveaways.mjs --self-test
+      - run: node scripts/confirm-liar.mjs --self-test
