@@ -350,6 +350,47 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "alxfman",
+      "handle": "Alxfman",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "805896136619859968",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2112144748081487872/aIJa4hWM_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/Alxfman",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-04 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-04",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条过去 48 小时内的中文抽 iPhone 帖。帖子写了抽幸运观众，又写把手机赠送给作者，所以不能把它当成已经发奖。2026-11-04 公开资料粉丝数约 1146，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-04",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录过去 48 小时内、帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "alxfman",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-11-02-iphone-giveaway",
+              "account_id": "alxfman",
+              "date": "2026-11-02",
+              "url": "https://x.com/Alxfman/status/2117395006436917449",
+              "excerpt": "我将从评论区随机抽取 4 位幸运观众，赠送我 1 台全新 iPhone 17 Pro Max。只需在下方评论“我愿意”。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写赠送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "anni22022",
       "handle": "Anni22022",
       "x_user_id": "1499731647172050947",
