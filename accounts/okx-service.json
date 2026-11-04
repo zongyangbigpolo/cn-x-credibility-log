@@ -1,0 +1,22 @@
+{
+  "id": "okx-service",
+  "handle": "okx_service",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": "1544173728535396352",
+  "avatar_url": "https://pbs.twimg.com/profile_images/1544198537117941760/_UvZRUMh_200x200.jpg",
+  "display_name": "OKX官方注册服务",
+  "profile_url": "https://x.com/okx_service",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-11-04 公开主页还能打开。",
+  "availability_checked_at": "2026-11-04",
+  "availability_lock": false,
+  "overview": "公开显示名自称 OKX 官方注册服务，简介把人往不是 okx.com 的注册页上引。官方账号 @okx 和客服 @OKXHelpDesk 是另外的用户编号。主页没有写出索要私钥、验证码或转账。这不是法院判决，先标待核对。",
+  "updated": "2026-11-04",
+  "sources_are_public": true,
+  "editor_note": "简介里的注册链接和邀请码没有写入，避免把人引到可疑页面。公开显示名是机构自称，不是真人姓名。",
+  "behaviors": [
+    "data/behaviors/okx-service/fake-official-signup.json"
+  ]
+}

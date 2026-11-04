@@ -1,0 +1,11 @@
+{
+  "id": "fake-official-signup",
+  "account_id": "okx-service",
+  "categories": ["identity_fraud", "web3_scam"],
+  "title": "用官方注册服务的身份把人引去非官方页面",
+  "summary": "公开主页自称 OKX 官方注册服务，并承诺注册可领数字货币奖励。链接域名不是交易所自己的 okx.com。",
+  "verification": null,
+  "evidence": [
+    "evidence/okx-service/2026-11-04-profile.json"
+  ]
+}

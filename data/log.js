@@ -2048,6 +2048,48 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "okx-service",
+      "handle": "okx_service",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1544173728535396352",
+      "avatar_url": "https://pbs.twimg.com/profile_images/1544198537117941760/_UvZRUMh_200x200.jpg",
+      "display_name": "OKX官方注册服务",
+      "profile_url": "https://x.com/okx_service",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-04 公开主页还能打开。",
+      "availability_checked_at": "2026-11-04",
+      "availability_lock": false,
+      "overview": "公开显示名自称 OKX 官方注册服务，简介把人往不是 okx.com 的注册页上引。官方账号 @okx 和客服 @OKXHelpDesk 是另外的用户编号。主页没有写出索要私钥、验证码或转账。这不是法院判决，先标待核对。",
+      "updated": "2026-11-04",
+      "sources_are_public": true,
+      "editor_note": "简介里的注册链接和邀请码没有写入，避免把人引到可疑页面。公开显示名是机构自称，不是真人姓名。",
+      "behaviors": [
+        {
+          "id": "fake-official-signup",
+          "account_id": "okx-service",
+          "categories": [
+            "identity_fraud",
+            "web3_scam"
+          ],
+          "title": "用官方注册服务的身份把人引去非官方页面",
+          "summary": "公开主页自称 OKX 官方注册服务，并承诺注册可领数字货币奖励。链接域名不是交易所自己的 okx.com。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-11-04-profile",
+              "account_id": "okx-service",
+              "date": "2026-11-04",
+              "url": "https://x.com/okx_service",
+              "excerpt": "公开显示名：OKX官方注册服务。公开简介称注册 OKX 可领数字货币奖励，链接域名不是 okx.com。",
+              "why_it_matters": "这是账号自己的公开主页，不是别人转述。官方交易所主页和客服号是另外的用户编号。主页没有写出索要私钥、验证码或先转账，所以只记录身份和注册引流对不上。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "owyyzq",
       "handle": "owyyzq",
       "former_handles": [],
