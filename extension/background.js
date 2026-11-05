@@ -6,17 +6,20 @@ const BEARER = "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Z
 let running = false;
 
 async function loadList() {
-  for (const url of LIST_URLS) {
+  const lists = [];
+  for (const url of [...LIST_URLS, chrome.runtime.getURL("liars.json")]) {
     try {
       const response = await fetch(url, { cache: "no-store" });
       if (!response.ok) continue;
       const data = await response.json();
-      if (Array.isArray(data.accounts)) return data.accounts;
+      if (Array.isArray(data.accounts)) lists.push(data.accounts);
     } catch { /* try the next public copy */ }
   }
-  const bundled = await fetch(chrome.runtime.getURL("liars.json"));
-  const data = await bundled.json();
-  return Array.isArray(data.accounts) ? data.accounts : [];
+  const byId = new Map();
+  lists.forEach((list) => list.forEach((account) => {
+    if (account?.id) byId.set(account.id, account);
+  }));
+  return [...byId.values()];
 }
 
 async function blockOne(account, csrf) {

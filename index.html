@@ -45,8 +45,8 @@
       <li>维护者确认后才会标成 Liar。<a href="https://github.com/zongyangbigpolo/cn-x-credibility-log/tree/main/extension">屏蔽插件</a>只屏蔽这份已确认名单。</li>
     </ul>
     <details class="maintainer">
-      <summary>维护者：保存 Token 后，确认开关点一次就提交</summary>
-      <p>Token 只留在这台浏览器，不会写进仓库。需要这个仓库的 Issues 写权限。没有 Token 时，开关会打开确认页，要用 zongyangbigpolo 或 Polo-Li_citrix 提交。</p>
+      <summary>第一次确认前，粘贴一次 Token</summary>
+      <p>Token 只留在这台浏览器，不会写进仓库。需要能改这个仓库的 public_repo 权限。保存后，账号页的开关点一下就直接标成 Liar，不用再打开 GitHub。</p>
       <input id="token" type="password" autocomplete="off" placeholder="GitHub Token">
       <button type="button" id="save-token">保存在这台浏览器</button>
       <button type="button" id="clear-token">清除</button>
@@ -55,6 +55,6 @@
   </footer>
   <noscript><p class="noscript">浏览器没有打开脚本。请改看仓库里的「阅读.md」。</p></noscript>
   <script src="data/log.js?v=19"></script>
-  <script src="js/app.js?v=10"></script>
+  <script src="js/app.js?v=11"></script>
 </body>
 </html>

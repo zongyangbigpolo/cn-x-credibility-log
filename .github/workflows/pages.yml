@@ -22,9 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - uses: actions/configure-pages@v5
         with:
           enablement: true
+      - name: 按最新确认生成阅读页
+        run: node scripts/build.mjs
       - name: 只发布阅读页
         run: |
           mkdir -p _site/css _site/js _site/data _site/assets/avatars

@@ -15,7 +15,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/build.mjs --check
+      - name: 拉取请求必须已经生成阅读页
+        if: github.event_name == 'pull_request'
+        run: node scripts/build.mjs --check
+      - name: 网页直接确认后，源记录仍要能生成
+        if: github.event_name == 'push'
+        run: node scripts/build.mjs && node scripts/build.mjs --check
       - run: node scripts/check-accounts.mjs --self-test
       - run: node scripts/find-iphone-giveaways.mjs --self-test
       - run: node scripts/confirm-liar.mjs --self-test

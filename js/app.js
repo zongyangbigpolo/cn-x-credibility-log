@@ -15,6 +15,7 @@
   const plain = (list, id) => (list.find((item) => item.id === id) || {}).plain || "";
   let selected = location.hash.slice(1);
   let actionNote = "";
+  let needsToken = false;
 
   function el(tag, attrs, children) {
     const node = document.createElement(tag);
@@ -129,40 +130,61 @@
   function select(id) {
     selected = id;
     actionNote = "";
+    needsToken = false;
     history.replaceState(null, "", `#${id}`);
     render();
     report.scrollIntoView({ block: "start" });
   }
 
+  function bytesToBase64(bytes) {
+    let binary = "";
+    bytes.forEach((byte) => { binary += String.fromCharCode(byte); });
+    return btoa(binary);
+  }
+
   async function confirmLiar(account) {
-    const accepted = window.confirm(`确认把 @${account.handle} 标为 Liar？\n\n这只表示维护者确认了现有公开记录，不是法院判决。质疑的人不会因此被标成 Liar。`);
-    if (!accepted) return;
-    const title = `确认 Liar: ${account.id}`;
-    const body = `account_id: ${account.id}\n`;
     const token = localStorage.getItem("cnxlog-token");
-    if (token) {
-      actionNote = "正在提交确认…";
+    if (!token) {
+      needsToken = true;
+      actionNote = "第一次确认前，把 Token 粘贴到下面。只做一次，之后在网页上点一下就写入，不用再打开 GitHub。";
       render();
-      try {
-        const response = await fetch(`https://api.github.com/repos/${REPO}/issues`, {
-          method: "POST",
-          headers: {
-            accept: "application/vnd.github+json",
-            authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({ title, body }),
-        });
-        if (!response.ok) throw new Error(String(response.status));
-        actionNote = "已提交。确认写进名单后，刷新页面就能看到 Liar。插件会读取同一份名单。";
-        render();
-        return;
-      } catch {
-        actionNote = "直接提交没有成功，已改为打开确认页。";
-        render();
-      }
+      return;
     }
-    window.open(issueUrl("confirm-liar.yml", { title, account_id: account.id }), "_blank", "noopener,noreferrer");
-    actionNote = "已打开确认页。用维护者账号提交后，才会写进公开名单。";
+    const accepted = window.confirm(`确认把 @${account.handle} 标为 Liar？\n\n点确定就直接写入。这不是法院判决，质疑的人不会因此被标成 Liar。`);
+    if (!accepted) return;
+    needsToken = false;
+    actionNote = "正在写入…";
+    render();
+    try {
+      const path = `accounts/${account.id}.json`;
+      const headers = { accept: "application/vnd.github+json", authorization: `Bearer ${token}` };
+      const meta = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}?ref=main`, { headers });
+      if (!meta.ok) throw new Error(meta.status === 401 || meta.status === 403 ? "Token 没有改这个仓库的权限" : `读取失败 ${meta.status}`);
+      const file = await meta.json();
+      const text = new TextDecoder().decode(Uint8Array.from(atob(file.content.replace(/\n/g, "")), (char) => char.charCodeAt(0)));
+      const status = text.match(/"status": "(needs_review|documented)"/);
+      if (!status) throw new Error("这条记录现在不能标成 Liar");
+      const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
+      const next = text
+        .replace(`"status": "${status[1]}"`, '"status": "liar"')
+        .replace(/"updated": "\d{4}-\d{2}-\d{2}"/, `"updated": "${today}"`);
+      const put = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+        method: "PUT",
+        headers: { ...headers, "content-type": "application/json" },
+        body: JSON.stringify({
+          message: `Confirm @${account.handle} as Liar`,
+          content: bytesToBase64(new TextEncoder().encode(next)),
+          sha: file.sha,
+          branch: "main",
+        }),
+      });
+      if (!put.ok) throw new Error(put.status === 409 ? "刚有人改过这条，请刷新后再点" : `写入失败 ${put.status}`);
+      account.status = "liar";
+      account.updated = today;
+      actionNote = "已在网页上确认。公开页面大约一分钟后更新，插件也会读到。";
+    } catch (error) {
+      actionNote = `没有写成：${error.message || error}`;
+    }
     render();
   }
 
@@ -263,9 +285,29 @@
       el("p", { class: "muted" }, [
         account.status === "liar"
           ? "这个账号已在屏蔽名单里。安装仓库 extension 文件夹后，打开 X 可以一键屏蔽，不会自动发言。"
-          : "质疑只是公开说明哪里对不上，不会把人标成 Liar。确认开关只有维护者提交后才写入名单。",
+          : "质疑只是公开说明哪里对不上，不会把人标成 Liar。确认开关点一下就直接写入，不用再交 GitHub。",
       ]),
     ];
+    if (needsToken && account.status !== "liar") {
+      const input = el("input", { type: "password", autocomplete: "off", placeholder: "粘贴一次 Token" });
+      const save = el("button", { type: "button", class: "text-button" }, ["保存并确认"]);
+      save.addEventListener("click", () => {
+        const value = input.value.trim();
+        if (!value) return;
+        localStorage.setItem("cnxlog-token", value);
+        needsToken = false;
+        confirmLiar(account);
+      });
+      notes.push(el("div", { class: "actions" }, [
+        input,
+        save,
+        el("a", {
+          href: "https://github.com/settings/tokens/new?scopes=public_repo&description=Liar%E7%A1%AE%E8%AE%A4",
+          target: "_blank",
+          rel: "noopener noreferrer",
+        }, ["生成 Token"]),
+      ]));
+    }
     if (actionNote) notes.push(el("p", { class: "action-note" }, [actionNote]));
     return [el("h3", {}, ["提交和确认"]), row, ...notes];
   }
@@ -330,8 +372,8 @@
   function showTokenState() {
     if (!tokenState) return;
     tokenState.textContent = localStorage.getItem("cnxlog-token")
-      ? "这台浏览器已保存 Token。确认开关会直接提交。"
-      : "还没保存 Token。确认开关会打开 GitHub 确认页。";
+      ? "这台浏览器已保存 Token。网页上点一下就会直接写入。"
+      : "还没保存 Token。第一次确认前粘贴一次，之后不用再打开 GitHub。";
   }
   document.querySelector("#save-token")?.addEventListener("click", () => {
     const value = tokenInput?.value.trim();

@@ -1,0 +1,31 @@
+name: 同步阅读页
+
+on:
+  push:
+    branches: [main]
+    paths: ["accounts/**"]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/build.mjs
+      - name: 写回屏蔽名单
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/log.js data/liars.json extension/liars.json "阅读.md"
+          if git diff --cached --quiet; then
+            echo "阅读页已经是最新"
+          else
+            git commit -m "Update the public Liar list"
+            git push
+          fi
