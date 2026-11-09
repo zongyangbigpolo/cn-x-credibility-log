@@ -3248,6 +3248,47 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "zhangdalux",
+      "handle": "zhangdaluX",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "1760549844626862080",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2108759320448122880/_ZCzwkI6_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/zhangdaluX",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-09 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-09",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了发福利或抽手机，又写把名额或手机送给作者，所以不能把它当成已经发奖。2026-11-09 公开资料粉丝数约 11528，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-09",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "zhangdalux",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-29-iphone-giveaway",
+              "account_id": "zhangdalux",
+              "date": "2026-10-29",
+              "url": "https://x.com/zhangdaluX/status/2115673318678573290",
+              "excerpt": "grok 抽奖🎟️ 保证公平公正公开。 不要等别人抽到了，才后悔没参加。 抽 15个评论区幸运粉丝送给我，人人都有机会🙂🙂",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "zhuanbidao",
       "handle": "zhuanbidao",
       "x_user_id": "1726922481141940224",
