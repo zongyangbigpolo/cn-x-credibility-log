@@ -988,6 +988,47 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "erokaiz",
+      "handle": "eroKaiZ",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "2000844380031344641",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2000844641143545856/Cyqkj72f_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/eroKaiZ",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-16 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-16",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了发福利或抽手机，又写把名额或手机送给作者，所以不能把它当成已经发奖。2026-11-16 公开资料粉丝数约 1440，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-16",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "erokaiz",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-28-iphone-giveaway",
+              "account_id": "erokaiz",
+              "date": "2026-10-28",
+              "url": "https://x.com/eroKaiZ/status/2115480275065118882",
+              "excerpt": "一下💬 24小时后我会让@grok来抽，公开透明，绝对不搞黑箱。 别等别人中了才后悔，抽18个粉丝送给我，大家都有机会哦。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "fomoooomi",
       "handle": "Fomoooomi",
       "former_handles": [],
@@ -1808,6 +1849,47 @@ window.CREDIBILITY_LOG = {
               "date": "2026-10-26",
               "url": "https://x.com/Leo139999/status/2114793165018587558",
               "excerpt": "本次抽10台 iPhone Duo。不要等别人抽到了才后悔没有参加，抽10个粉丝送给我。",
+              "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "li7685721175063",
+      "handle": "li7685721175063",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "2010038836831961088",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2031060437404626944/CxQpI5dt_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/li7685721175063",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-16 公开搜索时主页资料还能打开。粉丝数不超过 100 万。",
+      "availability_checked_at": "2026-11-16",
+      "availability_lock": false,
+      "overview": "公开搜索找到一条中文抽 iPhone 帖。帖子写了发福利或抽手机，又写把名额或手机送给作者，所以不能把它当成已经发奖。2026-11-16 公开资料粉丝数约 6146，不超过 100 万。这不是法院判决。",
+      "updated": "2026-11-16",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入。没有登录。只收录帖子自己写明不是由作者发奖、且粉丝不超过 100 万的公开帖。",
+      "behaviors": [
+        {
+          "id": "fake-giveaway",
+          "account_id": "li7685721175063",
+          "categories": [
+            "false_info"
+          ],
+          "title": "中文抽手机帖写明不是作者发奖",
+          "summary": "公开帖用抽 iPhone 换互动，同一条帖又写粉丝或中奖者把手机送给作者。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-10-26-iphone-giveaway",
+              "account_id": "li7685721175063",
+              "date": "2026-10-26",
+              "url": "https://x.com/li7685721175063/status/2114616028621836592",
+              "excerpt": "🎁 iPhone Duo 抽奖活动正式开启！ 这次抽 12 台 iPhone Duo，抽 12 个粉丝送给我！📱 参与方式： ❤️ 点赞此帖 💬 评论区留下「已关注」 主打一个公平公正！ 明天凌晨 00:00 公布结果！🍀",
               "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
             }
           ]
