@@ -355,6 +355,55 @@ window.CREDIBILITY_LOG = {
       ]
     },
     {
+      "id": "alisonowoz",
+      "handle": "Alisonowoz",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "2090978389247090688",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2110097036741586944/zVaSy8ht_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/Alisonowoz",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-16 公开主页还能打开，并显示已认证。",
+      "availability_checked_at": "2026-11-16",
+      "availability_lock": false,
+      "overview": "已认证账号。公开帖用英文招聘，目的地写香港，并让人去简介里的链接申请。简介写在家可以赚很多钱，主页链接指向 Telegram。没有看到真实雇主或发薪证明。照片历史要登录才看得到，没有用照片下结论。这不是法院判决，先标待核对。",
+      "updated": "2026-11-16",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入，避免收进可能的真人姓名。Telegram 链接没有抄进记录。",
+      "behaviors": [
+        {
+          "id": "job-telegram-funnel",
+          "account_id": "alisonowoz",
+          "categories": [
+            "scam_funnel"
+          ],
+          "title": "用香港远程招聘把人引到简介链接",
+          "summary": "公开帖写香港远程岗位，零基础也可，并要求通过简介链接申请。简介链接指向 Telegram。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-11-09-hong-kong-hiring",
+              "account_id": "alisonowoz",
+              "date": "2026-11-09",
+              "url": "https://x.com/Alisonowoz/status/2119584524560380245",
+              "excerpt": "Hong Kong。WE’RE HIRING – REMOTE JOBS。岗位包括 Personal Assistant、Translation / Retyping / Data Entry，写明 Beginner-friendly，薪资 $2,000–$4,000，在家工作，Apply now via the link on my bio。",
+              "why_it_matters": "这是账号自己的公开帖。英文招聘把目的地写成香港，并让申请人去简介链接。"
+            },
+            {
+              "id": "2026-11-16-profile",
+              "account_id": "alisonowoz",
+              "date": "2026-11-16",
+              "url": "https://x.com/Alisonowoz",
+              "excerpt": "公开简介写手机和知识可以在家赚钱。主页链接指向 Telegram。账号显示已认证。",
+              "why_it_matters": "招聘帖说去简介链接申请。这个公开主页把申请引到 Telegram。具体链接没有抄进来。"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "alxfman",
       "handle": "Alxfman",
       "former_handles": [],
@@ -2417,6 +2466,55 @@ window.CREDIBILITY_LOG = {
               "url": "https://x.com/rkiojejdmnd/status/2115384665104134177",
               "excerpt": "抽取1位幸运粉丝，送我一台 iPhone Duo。评论区留言：我愿意送你一台 iPhone Duo。",
               "why_it_matters": "这条公开帖说抽 iPhone，又写送给作者。公开搜索没有把它当成已发奖的证明。粉丝数不超过 100 万。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sandremeria",
+      "handle": "Sandremeria",
+      "former_handles": [],
+      "current_handle": null,
+      "x_user_id": "2090726580104445952",
+      "avatar_url": "https://pbs.twimg.com/profile_images/2108721096899883008/VQ7q1ZxW_200x200.jpg",
+      "display_name": "",
+      "profile_url": "https://x.com/Sandremeria",
+      "status": "needs_review",
+      "availability": "active",
+      "availability_note": "2026-11-16 公开主页还能打开，并显示已认证。",
+      "availability_checked_at": "2026-11-16",
+      "availability_lock": false,
+      "overview": "已认证账号。公开帖用英文招聘，目的地写香港，并让人去简介里的链接申请。简介写急招员工，主页链接指向 Telegram。同一套招聘模板还拿去写多个别的国家。没有看到真实雇主或发薪证明。照片历史要登录才看得到，没有用照片下结论。这不是法院判决，先标待核对。",
+      "updated": "2026-11-16",
+      "sources_are_public": true,
+      "editor_note": "公开显示名没有写入，避免收进可能的真人姓名。Telegram 链接没有抄进记录。",
+      "behaviors": [
+        {
+          "id": "job-telegram-funnel",
+          "account_id": "sandremeria",
+          "categories": [
+            "scam_funnel"
+          ],
+          "title": "用香港远程招聘把人引到简介链接",
+          "summary": "公开帖写香港远程岗位，零基础也可，并要求通过简介链接申请。简介链接指向 Telegram。",
+          "verification": null,
+          "evidence": [
+            {
+              "id": "2026-11-15-hong-kong-hiring",
+              "account_id": "sandremeria",
+              "date": "2026-11-15",
+              "url": "https://x.com/Sandremeria/status/2121939256822370566",
+              "excerpt": "Hong Kong。WE’RE HIRING – REMOTE JOBS。岗位包括 Personal Assistant、Translation / Retyping / Data Entry，写明 Beginner-friendly，薪资 $200，在家工作，Apply now via the link on my bio。",
+              "why_it_matters": "这是账号自己的公开帖。英文招聘把目的地写成香港，并让申请人去简介链接，而不是留下可核对的雇主。"
+            },
+            {
+              "id": "2026-11-16-profile",
+              "account_id": "sandremeria",
+              "date": "2026-11-16",
+              "url": "https://x.com/Sandremeria",
+              "excerpt": "公开简介：please kindly apply for the job we are urgently in need of employees thanks。主页链接指向 Telegram。账号显示已认证。",
+              "why_it_matters": "招聘帖说去简介链接申请。这个公开主页把申请引到 Telegram。具体链接没有抄进来。"
             }
           ]
         }

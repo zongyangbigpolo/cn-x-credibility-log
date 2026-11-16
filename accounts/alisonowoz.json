@@ -1,0 +1,22 @@
+{
+  "id": "alisonowoz",
+  "handle": "Alisonowoz",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": "2090978389247090688",
+  "avatar_url": "https://pbs.twimg.com/profile_images/2110097036741586944/zVaSy8ht_200x200.jpg",
+  "display_name": "",
+  "profile_url": "https://x.com/Alisonowoz",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-11-16 公开主页还能打开，并显示已认证。",
+  "availability_checked_at": "2026-11-16",
+  "availability_lock": false,
+  "overview": "已认证账号。公开帖用英文招聘，目的地写香港，并让人去简介里的链接申请。简介写在家可以赚很多钱，主页链接指向 Telegram。没有看到真实雇主或发薪证明。照片历史要登录才看得到，没有用照片下结论。这不是法院判决，先标待核对。",
+  "updated": "2026-11-16",
+  "sources_are_public": true,
+  "editor_note": "公开显示名没有写入，避免收进可能的真人姓名。Telegram 链接没有抄进记录。",
+  "behaviors": [
+    "data/behaviors/alisonowoz/job-telegram-funnel.json"
+  ]
+}

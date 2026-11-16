@@ -1,0 +1,22 @@
+{
+  "id": "sandremeria",
+  "handle": "Sandremeria",
+  "former_handles": [],
+  "current_handle": null,
+  "x_user_id": "2090726580104445952",
+  "avatar_url": "https://pbs.twimg.com/profile_images/2108721096899883008/VQ7q1ZxW_200x200.jpg",
+  "display_name": "",
+  "profile_url": "https://x.com/Sandremeria",
+  "status": "needs_review",
+  "availability": "active",
+  "availability_note": "2026-11-16 公开主页还能打开，并显示已认证。",
+  "availability_checked_at": "2026-11-16",
+  "availability_lock": false,
+  "overview": "已认证账号。公开帖用英文招聘，目的地写香港，并让人去简介里的链接申请。简介写急招员工，主页链接指向 Telegram。同一套招聘模板还拿去写多个别的国家。没有看到真实雇主或发薪证明。照片历史要登录才看得到，没有用照片下结论。这不是法院判决，先标待核对。",
+  "updated": "2026-11-16",
+  "sources_are_public": true,
+  "editor_note": "公开显示名没有写入，避免收进可能的真人姓名。Telegram 链接没有抄进记录。",
+  "behaviors": [
+    "data/behaviors/sandremeria/job-telegram-funnel.json"
+  ]
+}

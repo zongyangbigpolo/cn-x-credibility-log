@@ -1,0 +1,12 @@
+{
+  "id": "job-telegram-funnel",
+  "account_id": "sandremeria",
+  "categories": ["scam_funnel"],
+  "title": "用香港远程招聘把人引到简介链接",
+  "summary": "公开帖写香港远程岗位，零基础也可，并要求通过简介链接申请。简介链接指向 Telegram。",
+  "verification": null,
+  "evidence": [
+    "evidence/sandremeria/2026-11-15-hong-kong-hiring.json",
+    "evidence/sandremeria/2026-11-16-profile.json"
+  ]
+}
